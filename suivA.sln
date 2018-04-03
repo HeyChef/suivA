@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suivA", "suivA\suivA.csproj", "{5521281D-950A-43E6-8620-9E26D708CBF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5521281D-950A-43E6-8620-9E26D708CBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5521281D-950A-43E6-8620-9E26D708CBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5521281D-950A-43E6-8620-9E26D708CBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5521281D-950A-43E6-8620-9E26D708CBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DC619EF-1071-4BCE-9B8F-7850FF57489E}
+	EndGlobalSection
+EndGlobal
