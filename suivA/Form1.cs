@@ -15,6 +15,8 @@ namespace suivA
         public Form1()
         {
             InitializeComponent();
+            Bdd tryrequest = new Bdd();
+            tryrequest.AddMarque("OMEN");
         }
     }
 }
