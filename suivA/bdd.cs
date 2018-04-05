@@ -24,7 +24,7 @@ namespace suivA
         private void InitConnexion()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=127.0.0.1; DATABASE=assistance_ppe; UID=root; PASSWORD=";
+            string connectionString = "SERVER=127.0.0.1; DATABASE=; UID=root; PASSWORD=";
             this.connection = new MySqlConnection(connectionString);
         }
 

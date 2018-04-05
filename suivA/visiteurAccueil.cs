@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace suivA
 {
-    public partial class Form1 : Form
+    public partial class visiteurAccueil : Form
     {
-        public Form1()
+        public visiteurAccueil()
         {
             InitializeComponent();
-            Bdd tryrequest = new Bdd();
-            tryrequest.AddMarque("OMEN");
+        }
+
+        private void visiteurAccueil_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
