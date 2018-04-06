@@ -29,93 +29,128 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.panelLogin = new System.Windows.Forms.Panel();
             this.validerbutton = new System.Windows.Forms.Button();
             this.passwordbox = new System.Windows.Forms.TextBox();
             this.identifiantbox = new System.Windows.Forms.TextBox();
             this.passwordlabel = new System.Windows.Forms.Label();
             this.identifiantlabel = new System.Windows.Forms.Label();
+            this.gsbPicture = new System.Windows.Forms.PictureBox();
+            this.panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsbPicture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panelLogin
+            // 
+            this.panelLogin.BackColor = System.Drawing.Color.White;
+            this.panelLogin.Controls.Add(this.validerbutton);
+            this.panelLogin.Controls.Add(this.passwordbox);
+            this.panelLogin.Controls.Add(this.identifiantbox);
+            this.panelLogin.Controls.Add(this.passwordlabel);
+            this.panelLogin.Controls.Add(this.identifiantlabel);
+            this.panelLogin.Controls.Add(this.gsbPicture);
+            this.panelLogin.Location = new System.Drawing.Point(350, 172);
+            this.panelLogin.Name = "panelLogin";
+            this.panelLogin.Size = new System.Drawing.Size(700, 692);
+            this.panelLogin.TabIndex = 15;
             // 
             // validerbutton
             // 
-            this.validerbutton.BackColor = System.Drawing.Color.Transparent;
+            this.validerbutton.BackColor = System.Drawing.Color.White;
+            this.validerbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.validerbutton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.validerbutton.FlatAppearance.BorderSize = 10;
-            this.validerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.validerbutton.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.validerbutton.ForeColor = System.Drawing.Color.Black;
-            this.validerbutton.Location = new System.Drawing.Point(492, 560);
+            this.validerbutton.Location = new System.Drawing.Point(286, 577);
             this.validerbutton.Name = "validerbutton";
-            this.validerbutton.Size = new System.Drawing.Size(111, 40);
-            this.validerbutton.TabIndex = 14;
+            this.validerbutton.Size = new System.Drawing.Size(128, 46);
+            this.validerbutton.TabIndex = 19;
             this.validerbutton.Text = "Valider";
             this.validerbutton.UseVisualStyleBackColor = false;
             this.validerbutton.Click += new System.EventHandler(this.validerbutton_Click);
             // 
             // passwordbox
             // 
-            this.passwordbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordbox.Location = new System.Drawing.Point(692, 410);
+            this.passwordbox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordbox.Location = new System.Drawing.Point(338, 471);
             this.passwordbox.Name = "passwordbox";
-            this.passwordbox.Size = new System.Drawing.Size(200, 38);
-            this.passwordbox.TabIndex = 13;
+            this.passwordbox.Size = new System.Drawing.Size(325, 40);
+            this.passwordbox.TabIndex = 18;
+            this.passwordbox.UseSystemPasswordChar = true;
             // 
             // identifiantbox
             // 
-            this.identifiantbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiantbox.Location = new System.Drawing.Point(692, 260);
+            this.identifiantbox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identifiantbox.Location = new System.Drawing.Point(338, 369);
             this.identifiantbox.Name = "identifiantbox";
-            this.identifiantbox.Size = new System.Drawing.Size(200, 38);
-            this.identifiantbox.TabIndex = 12;
+            this.identifiantbox.Size = new System.Drawing.Size(325, 40);
+            this.identifiantbox.TabIndex = 17;
             // 
             // passwordlabel
             // 
             this.passwordlabel.AutoSize = true;
             this.passwordlabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordlabel.Location = new System.Drawing.Point(292, 410);
+            this.passwordlabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordlabel.Location = new System.Drawing.Point(63, 471);
             this.passwordlabel.Name = "passwordlabel";
-            this.passwordlabel.Size = new System.Drawing.Size(176, 31);
-            this.passwordlabel.TabIndex = 11;
+            this.passwordlabel.Size = new System.Drawing.Size(162, 33);
+            this.passwordlabel.TabIndex = 16;
             this.passwordlabel.Text = "Mot de passe";
             // 
             // identifiantlabel
             // 
             this.identifiantlabel.AutoSize = true;
             this.identifiantlabel.BackColor = System.Drawing.Color.Transparent;
-            this.identifiantlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiantlabel.Location = new System.Drawing.Point(292, 260);
+            this.identifiantlabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identifiantlabel.Location = new System.Drawing.Point(63, 369);
             this.identifiantlabel.Name = "identifiantlabel";
-            this.identifiantlabel.Size = new System.Drawing.Size(133, 31);
-            this.identifiantlabel.TabIndex = 10;
+            this.identifiantlabel.Size = new System.Drawing.Size(128, 33);
+            this.identifiantlabel.TabIndex = 15;
             this.identifiantlabel.Text = "Identifiant";
+            // 
+            // gsbPicture
+            // 
+            this.gsbPicture.Image = ((System.Drawing.Image)(resources.GetObject("gsbPicture.Image")));
+            this.gsbPicture.Location = new System.Drawing.Point(128, 0);
+            this.gsbPicture.Name = "gsbPicture";
+            this.gsbPicture.Size = new System.Drawing.Size(443, 294);
+            this.gsbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gsbPicture.TabIndex = 20;
+            this.gsbPicture.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1184, 861);
-            this.Controls.Add(this.validerbutton);
-            this.Controls.Add(this.passwordbox);
-            this.Controls.Add(this.identifiantbox);
-            this.Controls.Add(this.passwordlabel);
-            this.Controls.Add(this.identifiantlabel);
-            this.MaximumSize = new System.Drawing.Size(1200, 900);
-            this.MinimumSize = new System.Drawing.Size(1200, 900);
+            this.ClientSize = new System.Drawing.Size(1381, 993);
+            this.Controls.Add(this.panelLogin);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1397, 1032);
+            this.MinimumSize = new System.Drawing.Size(1397, 1032);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Connexion";
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsbPicture)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Button validerbutton;
         private System.Windows.Forms.TextBox passwordbox;
         private System.Windows.Forms.TextBox identifiantbox;
         private System.Windows.Forms.Label passwordlabel;
         private System.Windows.Forms.Label identifiantlabel;
+        private System.Windows.Forms.PictureBox gsbPicture;
     }
 }
 

@@ -21,5 +21,11 @@ namespace suivA
         {
             Application.Exit();
         }
+
+        private void addVisite_Click(object sender, EventArgs e)
+        {
+            AddVisite addVisiteWindow = new AddVisite();
+            addVisiteWindow.Show();
+        }
     }
 }

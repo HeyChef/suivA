@@ -19,10 +19,19 @@ namespace suivA
 
         private void validerbutton_Click(object sender, EventArgs e)
         {
-            var loginWindow = this;
-            visiteurAccueil gotoAccueilVisi = new visiteurAccueil();
-            gotoAccueilVisi.Show();
-            loginWindow.Hide();
+            BddRequest loginRequest = new BddRequest();
+            bool result = loginRequest.loginRequest(identifiantbox.Text, passwordbox.Text);
+            if (result == true)
+            {
+                var loginWindow = this;
+                visiteurAccueil gotoAccueilVisi = new visiteurAccueil();
+                gotoAccueilVisi.Show();
+                loginWindow.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Mot de passe ou identifiant incorrect");
+            }
         }
     }
 }

@@ -52,7 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bdd.cs" />
+    <Compile Include="AddVisite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVisite.Designer.cs">
+      <DependentUpon>AddVisite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BddRequest.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="visiteurAccueil.Designer.cs">
       <DependentUpon>visiteurAccueil.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddVisite.resx">
+      <DependentUpon>AddVisite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
