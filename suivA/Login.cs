@@ -20,11 +20,11 @@ namespace suivA
         private void validerbutton_Click(object sender, EventArgs e)
         {
             BddRequest loginRequest = new BddRequest();
-            bool result = loginRequest.loginRequest(identifiantbox.Text, passwordbox.Text);
-            if (result == true)
+            string result = loginRequest.loginRequest(identifiantbox.Text, passwordbox.Text);
+            if (result != "invalid")
             {
                 var loginWindow = this;
-                visiteurAccueil gotoAccueilVisi = new visiteurAccueil();
+                visiteurAccueil gotoAccueilVisi = new visiteurAccueil(result);
                 gotoAccueilVisi.Show();
                 loginWindow.Hide();
             }

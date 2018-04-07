@@ -59,6 +59,7 @@
             this.getStat.Size = new System.Drawing.Size(142, 33);
             this.getStat.TabIndex = 1;
             this.getStat.Text = "Statistiques";
+            this.getStat.Click += new System.EventHandler(this.getStat_Click);
             // 
             // pipe
             // 
@@ -97,6 +98,7 @@
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
             this.Name = "visiteurAccueil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "visiteurAccueil";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.visiteurAccueil_FormClosing);
             this.navPanel.ResumeLayout(false);
