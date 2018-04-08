@@ -123,6 +123,7 @@
             this.validerbutton.TabIndex = 29;
             this.validerbutton.Text = "Valider";
             this.validerbutton.UseVisualStyleBackColor = false;
+            this.validerbutton.Click += new System.EventHandler(this.validerbutton_Click);
             // 
             // AddCabinet
             // 
