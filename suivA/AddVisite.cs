@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace suivA
@@ -60,7 +53,13 @@ namespace suivA
                 string request = "INSERT INTO visite (rendez_vous, heure_arrivee, heure_debut_entretien, heure_depart, date_visite, id_medecin, id_utilisateur) VALUES ("+ rdv +", '"+ hArriveePicker.Text +"', '"+ hDebutPicker.Text +"', '"+ hDepartPicker.Text +"', '"+ visiteDatePicker.Text +"', "+ visiteurData.id_medecin  +", "+ visiteurData.id +");";
                 addVisite.DataRequest(request);
                 MessageBox.Show("Vos informations ont été enregistrées avec succès");
-                this.Close();
+                visiteurAccueil accueil = Application.OpenForms["visiteurAccueil"] as visiteurAccueil;
+                visiteurAccueil newaccueil = new visiteurAccueil(visiteurData.id);
+                var upt = this;
+                accueil.willClosed = false;
+                accueil.Close();
+                newaccueil.Show();
+                upt.Close();
             }
         }
     }

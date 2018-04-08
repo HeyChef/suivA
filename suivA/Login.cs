@@ -31,6 +31,8 @@ namespace suivA
             else
             {
                 MessageBox.Show("Mot de passe ou identifiant incorrect");
+                identifiantbox.Text = null;
+                passwordbox.Text = null;
             }
         }
     }

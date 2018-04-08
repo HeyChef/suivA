@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using System.Windows.Forms;
 
 // Librairie MySQL ajoutée dans les références.
 using MySql.Data.MySqlClient;
@@ -79,6 +76,88 @@ namespace suivA
             this.connection.Open();
             MySqlCommand cmd = this.connection.CreateCommand();
             cmd.CommandText = request;
+            cmd.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
+        public DataTable FillComboBox(string request)
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = request;
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+            this.connection.Close();
+            return dt;
+        }
+
+        public string GetStatMedecin(string id_medecin, string date_d, string date_f)
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Select count(*) from visite where id_medecin=@id_medecin and date_visite between @date_d and @date_f";
+            cmd.Parameters.AddWithValue("@id_medecin", id_medecin);
+            cmd.Parameters.AddWithValue("@date_d", date_d);
+            cmd.Parameters.AddWithValue("@date_f", date_f);
+            string result = cmd.ExecuteScalar().ToString();
+            this.connection.Close();
+            return result;
+        }
+
+        public string[] GetStatVisiteur(string id_utilisateur, string date)
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Select count(*) as count, timediff(SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_depart`) ) ),SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_debut_entretien`) ) )) as tps from visite where id_utilisateur=@id_utilisateur and date_visite=@date";
+            cmd.Parameters.AddWithValue("@id_utilisateur", id_utilisateur);
+            cmd.Parameters.AddWithValue("@date", date);
+            MySqlDataReader data = cmd.ExecuteReader();
+            string[] result = new string[2];
+            while (data.Read())
+            {
+                result[0] = data["count"].ToString();
+                result[1] = data["tps"].ToString();
+            }
+            this.connection.Close();
+            return result;
+        }
+
+        public string[] GetStatTempsMoy()
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "SELECT SEC_TO_TIME(timediff(SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_debut_entretien`) ) ),SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_arrivee`) ) ))/count(*)) as tpsatt,SEC_TO_TIME(timediff(SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_depart`) ) ),SEC_TO_TIME( SUM( TIME_TO_SEC(`heure_debut_entretien`) ) ))/count(*)) as tps FROM visite";
+            MySqlDataReader data = cmd.ExecuteReader();
+            string[] result = new string[2];
+            while (data.Read())
+            {
+                result[0] = data["tpsatt"].ToString();
+                result[1] = data["tps"].ToString();
+            }
+            this.connection.Close();
+            return result;
+        }
+
+        public DataSet SelectVisite(string id_utilisateur)
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Select id_utilisateur,rendez_vous,heure_arrivee,heure_depart,heure_debut_entretien,v.id,adresse,nom,date_format(date_visite,\"%d/%m/%Y\") as date_visite from visite v inner join medecin m on m.id=v.id_medecin inner join cabinet c on c.id=m.id_cabinet where id_utilisateur=@id_utilisateur";
+            cmd.Parameters.AddWithValue("@id_utilisateur", id_utilisateur);
+            MySqlDataAdapter data = new MySqlDataAdapter();
+            data.SelectCommand = cmd;
+            DataSet result = new DataSet();
+            data.Fill(result);
+            this.connection.Close();
+            return result;
+        }
+
+        public void deleteVisite(string id)
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Delete from visite where id=@id";
+            cmd.Parameters.AddWithValue("@id", id);
             cmd.ExecuteNonQuery();
             this.connection.Close();
         }

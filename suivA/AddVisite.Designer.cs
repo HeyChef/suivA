@@ -284,7 +284,7 @@
             this.visiteDatePicker.Name = "visiteDatePicker";
             this.visiteDatePicker.Size = new System.Drawing.Size(146, 40);
             this.visiteDatePicker.TabIndex = 24;
-            this.visiteDatePicker.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
+            this.visiteDatePicker.Value = new System.DateTime(2018, 4, 8, 0, 0, 0, 0);
             // 
             // AddVisite
             // 

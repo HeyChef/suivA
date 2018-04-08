@@ -42,7 +42,7 @@
             // 
             // panelLogin
             // 
-            this.panelLogin.BackColor = System.Drawing.Color.White;
+            this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panelLogin.Controls.Add(this.validerbutton);
             this.panelLogin.Controls.Add(this.passwordbox);
             this.panelLogin.Controls.Add(this.identifiantbox);
@@ -111,6 +111,7 @@
             // 
             // gsbPicture
             // 
+            this.gsbPicture.BackColor = System.Drawing.Color.Transparent;
             this.gsbPicture.Image = ((System.Drawing.Image)(resources.GetObject("gsbPicture.Image")));
             this.gsbPicture.Location = new System.Drawing.Point(128, 0);
             this.gsbPicture.Name = "gsbPicture";
