@@ -45,7 +45,7 @@ namespace suivA
         {
             this.connection.Open();
             MySqlCommand cmd = this.connection.CreateCommand();
-            cmd.CommandText = "select u.nom,u.prenom,u.id,u.id_medecin,u.id_role,m.nom,m.prenom from utilisateur u inner join medecin m on m.id=u.id_medecin where u.id=@id";
+            cmd.CommandText = "select u.nom,u.prenom,u.id,u.id_medecin,u.id_role from utilisateur u inner join medecin m on m.id=u.id_medecin where u.id=@id";
             cmd.Parameters.AddWithValue("@id", id);
             Visiteur visiteur = new Visiteur();
             MySqlDataReader reader = cmd.ExecuteReader();
