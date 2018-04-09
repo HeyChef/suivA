@@ -24,8 +24,17 @@ namespace suivA
             if (result != "invalid")
             {
                 var loginWindow = this;
-                visiteurAccueil gotoAccueilVisi = new visiteurAccueil(result);
-                gotoAccueilVisi.Show();
+                Visiteur visiteur = loginRequest.getVisiteur(result);
+                if(visiteur.id_role.ToString() == "1")
+                {
+                    visiteurAccueil gotoAccueilVisi = new visiteurAccueil(result);
+                    gotoAccueilVisi.Show();
+                }
+                else
+                {
+                    utilisateurAccueil gotoAccueilUti = new utilisateurAccueil(result);
+                    gotoAccueilUti.Show();
+                }
                 loginWindow.Hide();
             }
             else

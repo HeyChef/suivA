@@ -32,11 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Desktop\mysql-connector.net\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=6.6.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Web">
-      <HintPath>..\..\..\..\Desktop\mysql-connector.net\MySql.Web.dll</HintPath>
+    <Reference Include="MySql.Web, Version=6.6.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,6 +87,12 @@
     <Compile Include="UpdateVisite.Designer.cs">
       <DependentUpon>UpdateVisite.cs</DependentUpon>
     </Compile>
+    <Compile Include="utilisateurAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utilisateurAccueil.Designer.cs">
+      <DependentUpon>utilisateurAccueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visiteur.cs" />
     <Compile Include="visiteurAccueil.cs">
       <SubType>Form</SubType>
@@ -116,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateVisite.resx">
       <DependentUpon>UpdateVisite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utilisateurAccueil.resx">
+      <DependentUpon>utilisateurAccueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visiteurAccueil.resx">
       <DependentUpon>visiteurAccueil.cs</DependentUpon>
@@ -153,6 +164,9 @@
       <Project>{7c6447b2-d889-4306-ad8b-da5542054c66}</Project>
       <Name>GoogleDirections</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
