@@ -160,12 +160,6 @@
     <None Include="Resources\close-browser %284%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\geocode\GoogleDirections.csproj">
-      <Project>{7c6447b2-d889-4306-ad8b-da5542054c66}</Project>
-      <Name>GoogleDirections</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
