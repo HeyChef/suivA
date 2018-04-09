@@ -12,7 +12,7 @@ namespace suivA
 {
     public partial class utilisateurAccueil : Form
     {
-        public utilisateurAccueil(string id)
+        public utilisateurAccueil()
         {
             InitializeComponent();
         }
@@ -34,6 +34,12 @@ namespace suivA
                 Statistiques StatistiquesWindow = new Statistiques();
                 StatistiquesWindow.Show();
             }
+        }
+
+        private void medecinLabel_Click(object sender, EventArgs e)
+        {
+            medecinPanel.Visible = false;
+            medecinPanel.Visible = true;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace suivA
 {
-    partial class utilisateurAccueil
+    partial class Cabinet
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(utilisateurAccueil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cabinet));
+            this.cabinetLabel = new System.Windows.Forms.Label();
             this.navPanel = new System.Windows.Forms.Panel();
             this.statLabel = new System.Windows.Forms.Label();
             this.pipe3 = new System.Windows.Forms.Label();
             this.affectationLabel = new System.Windows.Forms.Label();
             this.pipe2 = new System.Windows.Forms.Label();
-            this.cabinetLabel = new System.Windows.Forms.Label();
             this.pipe1 = new System.Windows.Forms.Label();
             this.medecinLabel = new System.Windows.Forms.Label();
-            this.medecinPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
-            this.medecinPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // cabinetLabel
+            // 
+            this.cabinetLabel.AutoSize = true;
+            this.cabinetLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cabinetLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cabinetLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cabinetLabel.ForeColor = System.Drawing.Color.White;
+            this.cabinetLabel.Location = new System.Drawing.Point(173, 9);
+            this.cabinetLabel.Name = "cabinetLabel";
+            this.cabinetLabel.Size = new System.Drawing.Size(109, 33);
+            this.cabinetLabel.TabIndex = 1;
+            this.cabinetLabel.Text = "Cabinets";
             // 
             // navPanel
             // 
@@ -56,7 +66,7 @@
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
             this.navPanel.Size = new System.Drawing.Size(1185, 50);
-            this.navPanel.TabIndex = 1;
+            this.navPanel.TabIndex = 2;
             // 
             // statLabel
             // 
@@ -70,7 +80,6 @@
             this.statLabel.Size = new System.Drawing.Size(142, 33);
             this.statLabel.TabIndex = 4;
             this.statLabel.Text = "Statistiques";
-            this.statLabel.Click += new System.EventHandler(this.statLabel_Click);
             // 
             // pipe3
             // 
@@ -109,19 +118,6 @@
             this.pipe2.TabIndex = 3;
             this.pipe2.Text = "|";
             // 
-            // cabinetLabel
-            // 
-            this.cabinetLabel.AutoSize = true;
-            this.cabinetLabel.BackColor = System.Drawing.Color.Transparent;
-            this.cabinetLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cabinetLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cabinetLabel.ForeColor = System.Drawing.Color.White;
-            this.cabinetLabel.Location = new System.Drawing.Point(173, 9);
-            this.cabinetLabel.Name = "cabinetLabel";
-            this.cabinetLabel.Size = new System.Drawing.Size(109, 33);
-            this.cabinetLabel.TabIndex = 1;
-            this.cabinetLabel.Text = "Cabinets";
-            // 
             // pipe1
             // 
             this.pipe1.AutoSize = true;
@@ -146,61 +142,33 @@
             this.medecinLabel.Size = new System.Drawing.Size(120, 33);
             this.medecinLabel.TabIndex = 0;
             this.medecinLabel.Text = "Médecins";
-            this.medecinLabel.Click += new System.EventHandler(this.medecinLabel_Click);
             // 
-            // medecinPanel
-            // 
-            this.medecinPanel.Controls.Add(this.label1);
-            this.medecinPanel.Location = new System.Drawing.Point(0, 56);
-            this.medecinPanel.Name = "medecinPanel";
-            this.medecinPanel.Size = new System.Drawing.Size(1185, 803);
-            this.medecinPanel.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Médecins";
-            // 
-            // utilisateurAccueil
+            // Cabinet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1184, 861);
-            this.Controls.Add(this.medecinPanel);
             this.Controls.Add(this.navPanel);
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
-            this.Name = "utilisateurAccueil";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "utilisateurAccueil";
+            this.Name = "Cabinet";
+            this.Text = "Cabinet";
             this.navPanel.ResumeLayout(false);
             this.navPanel.PerformLayout();
-            this.medecinPanel.ResumeLayout(false);
-            this.medecinPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel navPanel;
         private System.Windows.Forms.Label cabinetLabel;
-        private System.Windows.Forms.Label pipe1;
-        private System.Windows.Forms.Label medecinLabel;
+        private System.Windows.Forms.Panel navPanel;
         private System.Windows.Forms.Label statLabel;
         private System.Windows.Forms.Label pipe3;
         private System.Windows.Forms.Label affectationLabel;
         private System.Windows.Forms.Label pipe2;
-        private System.Windows.Forms.Panel medecinPanel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label pipe1;
+        private System.Windows.Forms.Label medecinLabel;
     }
 }

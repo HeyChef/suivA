@@ -32,7 +32,7 @@ namespace suivA
                 }
                 else
                 {
-                    utilisateurAccueil gotoAccueilUti = new utilisateurAccueil(result);
+                    utilisateurAccueil gotoAccueilUti = new utilisateurAccueil();
                     gotoAccueilUti.Show();
                 }
                 loginWindow.Hide();
