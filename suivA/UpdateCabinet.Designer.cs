@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCabinet));
             this.cabinetAdresseBox = new System.Windows.Forms.TextBox();
             this.cabinetCPBox = new System.Windows.Forms.TextBox();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -127,6 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.cabinetVillebox);
             this.Controls.Add(this.label1);
