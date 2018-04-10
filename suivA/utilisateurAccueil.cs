@@ -162,8 +162,8 @@ namespace suivA
                     break;
                 }
             }
-            //UpdateCabinet upt = new UpdateCabinet(cabinet);
-            //upt.Show();
+            UpdateCabinet upt = new UpdateCabinet(cabinet);
+            upt.Show();
         }
 
         // Fonction qui verfie la fermerture de l'application
