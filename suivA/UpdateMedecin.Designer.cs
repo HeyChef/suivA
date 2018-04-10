@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateMedecin));
             this.medecinSelect = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.validerbutton = new System.Windows.Forms.Button();
@@ -129,6 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.prenomBox);
             this.Controls.Add(this.nomBox);
@@ -138,6 +140,7 @@
             this.Controls.Add(this.validerbutton);
             this.Controls.Add(this.prenomLabel);
             this.Controls.Add(this.nomLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(960, 720);
             this.MinimumSize = new System.Drawing.Size(960, 720);
             this.Name = "UpdateMedecin";

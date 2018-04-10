@@ -78,6 +78,7 @@
             this.passwordbox.Size = new System.Drawing.Size(325, 40);
             this.passwordbox.TabIndex = 18;
             this.passwordbox.UseSystemPasswordChar = true;
+            this.passwordbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordbox_KeyDown);
             // 
             // identifiantbox
             // 

@@ -62,7 +62,7 @@ namespace suivA
             this.visiteDatePicker.Name = "visiteDatePicker";
             this.visiteDatePicker.Size = new System.Drawing.Size(146, 40);
             this.visiteDatePicker.TabIndex = 43;
-            this.visiteDatePicker.Value = DateTime.Now;
+            this.visiteDatePicker.Value = new System.DateTime(2018, 4, 10, 10, 21, 9, 378);
             // 
             // cabinetSelect
             // 
@@ -313,6 +313,7 @@ namespace suivA
             this.Controls.Add(this.dvisiteLabel);
             this.Controls.Add(this.medecinLabel);
             this.Controls.Add(this.cabinetLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(960, 720);
             this.MinimumSize = new System.Drawing.Size(960, 720);
             this.Name = "UpdateVisite";

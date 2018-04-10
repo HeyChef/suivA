@@ -134,11 +134,11 @@ namespace suivA
             // 
             this.lineTitleLabel3.AutoSize = true;
             this.lineTitleLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel3.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lineTitleLabel3.ForeColor = System.Drawing.Color.White;
             this.lineTitleLabel3.Location = new System.Drawing.Point(541, 9);
             this.lineTitleLabel3.Name = "lineTitleLabel3";
-            this.lineTitleLabel3.Size = new System.Drawing.Size(27, 33);
+            this.lineTitleLabel3.Size = new System.Drawing.Size(19, 24);
             this.lineTitleLabel3.TabIndex = 5;
             this.lineTitleLabel3.Text = "|";
             // 
@@ -146,11 +146,11 @@ namespace suivA
             // 
             this.nomMedecinTitleLabel.AutoSize = true;
             this.nomMedecinTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nomMedecinTitleLabel.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomMedecinTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomMedecinTitleLabel.ForeColor = System.Drawing.Color.White;
             this.nomMedecinTitleLabel.Location = new System.Drawing.Point(253, 9);
             this.nomMedecinTitleLabel.Name = "nomMedecinTitleLabel";
-            this.nomMedecinTitleLabel.Size = new System.Drawing.Size(109, 33);
+            this.nomMedecinTitleLabel.Size = new System.Drawing.Size(82, 24);
             this.nomMedecinTitleLabel.TabIndex = 1;
             this.nomMedecinTitleLabel.Text = "Médecin";
             this.nomMedecinTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,11 +159,11 @@ namespace suivA
             // 
             this.hDebutTitleLabel.AutoSize = true;
             this.hDebutTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.hDebutTitleLabel.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hDebutTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hDebutTitleLabel.ForeColor = System.Drawing.Color.White;
             this.hDebutTitleLabel.Location = new System.Drawing.Point(575, 9);
             this.hDebutTitleLabel.Name = "hDebutTitleLabel";
-            this.hDebutTitleLabel.Size = new System.Drawing.Size(151, 33);
+            this.hDebutTitleLabel.Size = new System.Drawing.Size(115, 24);
             this.hDebutTitleLabel.TabIndex = 4;
             this.hDebutTitleLabel.Text = "Heure début";
             this.hDebutTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,11 +172,11 @@ namespace suivA
             // 
             this.lineTitleLabel1.AutoSize = true;
             this.lineTitleLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel1.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lineTitleLabel1.ForeColor = System.Drawing.Color.White;
             this.lineTitleLabel1.Location = new System.Drawing.Point(219, 9);
             this.lineTitleLabel1.Name = "lineTitleLabel1";
-            this.lineTitleLabel1.Size = new System.Drawing.Size(27, 33);
+            this.lineTitleLabel1.Size = new System.Drawing.Size(19, 24);
             this.lineTitleLabel1.TabIndex = 1;
             this.lineTitleLabel1.Text = "|";
             // 
@@ -184,11 +184,11 @@ namespace suivA
             // 
             this.adresseTitleLabel.AutoSize = true;
             this.adresseTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.adresseTitleLabel.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adresseTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adresseTitleLabel.ForeColor = System.Drawing.Color.White;
             this.adresseTitleLabel.Location = new System.Drawing.Point(81, 9);
             this.adresseTitleLabel.Name = "adresseTitleLabel";
-            this.adresseTitleLabel.Size = new System.Drawing.Size(98, 33);
+            this.adresseTitleLabel.Size = new System.Drawing.Size(75, 24);
             this.adresseTitleLabel.TabIndex = 0;
             this.adresseTitleLabel.Text = "Cabinet";
             this.adresseTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,11 +197,11 @@ namespace suivA
             // 
             this.lineTitleLabel2.AutoSize = true;
             this.lineTitleLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel2.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lineTitleLabel2.ForeColor = System.Drawing.Color.White;
             this.lineTitleLabel2.Location = new System.Drawing.Point(360, 9);
             this.lineTitleLabel2.Name = "lineTitleLabel2";
-            this.lineTitleLabel2.Size = new System.Drawing.Size(27, 33);
+            this.lineTitleLabel2.Size = new System.Drawing.Size(19, 24);
             this.lineTitleLabel2.TabIndex = 1;
             this.lineTitleLabel2.Text = "|";
             // 
@@ -209,11 +209,11 @@ namespace suivA
             // 
             this.dVisiteTitleLabel.AutoSize = true;
             this.dVisiteTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dVisiteTitleLabel.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dVisiteTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dVisiteTitleLabel.ForeColor = System.Drawing.Color.White;
             this.dVisiteTitleLabel.Location = new System.Drawing.Point(394, 9);
             this.dVisiteTitleLabel.Name = "dVisiteTitleLabel";
-            this.dVisiteTitleLabel.Size = new System.Drawing.Size(188, 33);
+            this.dVisiteTitleLabel.Size = new System.Drawing.Size(144, 24);
             this.dVisiteTitleLabel.TabIndex = 0;
             this.dVisiteTitleLabel.Text = "Date de la visite";
             this.dVisiteTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -222,11 +222,11 @@ namespace suivA
             // 
             this.lineTitleLabel4.AutoSize = true;
             this.lineTitleLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel4.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lineTitleLabel4.ForeColor = System.Drawing.Color.White;
             this.lineTitleLabel4.Location = new System.Drawing.Point(700, 9);
-            this.lineTitleLabel4.Name = "lineTitleLabel3";
-            this.lineTitleLabel4.Size = new System.Drawing.Size(27, 33);
+            this.lineTitleLabel4.Name = "lineTitleLabel4";
+            this.lineTitleLabel4.Size = new System.Drawing.Size(19, 24);
             this.lineTitleLabel4.TabIndex = 1;
             this.lineTitleLabel4.Text = "|";
             // 
@@ -234,11 +234,11 @@ namespace suivA
             // 
             this.rdvTitleLabel.AutoSize = true;
             this.rdvTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.rdvTitleLabel.Font = new System.Drawing.Font("Calibri",15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdvTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdvTitleLabel.ForeColor = System.Drawing.Color.White;
             this.rdvTitleLabel.Location = new System.Drawing.Point(736, 9);
             this.rdvTitleLabel.Name = "rdvTitleLabel";
-            this.rdvTitleLabel.Size = new System.Drawing.Size(188, 33);
+            this.rdvTitleLabel.Size = new System.Drawing.Size(163, 24);
             this.rdvTitleLabel.TabIndex = 0;
             this.rdvTitleLabel.Text = "Sur Rendez-Vous ?";
             this.rdvTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,6 +254,7 @@ namespace suivA
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Red;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
             this.Name = "visiteurAccueil";

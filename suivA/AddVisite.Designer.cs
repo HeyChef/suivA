@@ -311,6 +311,7 @@
             this.Controls.Add(this.dvisiteLabel);
             this.Controls.Add(this.medecinLabel);
             this.Controls.Add(this.cabinetLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(960, 720);
             this.MinimumSize = new System.Drawing.Size(960, 720);
             this.Name = "AddVisite";

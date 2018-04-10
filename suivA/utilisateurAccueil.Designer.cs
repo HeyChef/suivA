@@ -374,6 +374,7 @@ namespace suivA
             this.Controls.Add(this.navPanel);
             this.Controls.Add(this.affectationPanel);
             this.Controls.Add(this.panelCabinet);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
             this.Name = "utilisateurAccueil";

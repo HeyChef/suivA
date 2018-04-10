@@ -44,5 +44,14 @@ namespace suivA
                 passwordbox.Text = null;
             }
         }
+
+        private void passwordbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return)
+
+            {
+                validerbutton_Click(sender, e);
+            }
+        }
     }
 }

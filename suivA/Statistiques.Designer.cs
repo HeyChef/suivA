@@ -312,6 +312,7 @@
             this.Controls.Add(this.medecinBox);
             this.Controls.Add(this.statMedecinLabel);
             this.Controls.Add(this.titleLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(960, 720);
             this.MinimumSize = new System.Drawing.Size(960, 720);
             this.Name = "Statistiques";
