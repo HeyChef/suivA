@@ -21,6 +21,16 @@ namespace suivA
             getData();
             getDataCabinet();
             willCloseduti = true;
+            BddRequest request = new BddRequest();
+            DataTable dtMedecin = request.FillComboBox("Select nom, id from medecin order by nom");
+            medecinBox.ValueMember = "id";
+            medecinBox.DisplayMember = "nom";
+            medecinBox.DataSource = dtMedecin;
+
+            DataTable dtVisiteur = request.FillComboBox("Select nom, id from utilisateur where id_role=1 order by nom");
+            visiteurBox.ValueMember = "id";
+            visiteurBox.DisplayMember = "nom";
+            visiteurBox.DataSource = dtVisiteur;
         }
 
         // Fonction qui affiche les statistiques 
@@ -194,6 +204,13 @@ namespace suivA
                 addCabinetWindow.Show();
 
             }
+        }
+
+        private void validerbutton_Click(object sender, EventArgs e)
+        {
+            BddRequest updateMedecin = new BddRequest();
+            updateMedecin.DataRequest("UPDATE utilisateur set id_medecin=" + medecinBox.SelectedValue.ToString() + " where id="+visiteurBox.SelectedValue.ToString());
+            MessageBox.Show("Les informations ont été modifiées");
         }
     }
 }

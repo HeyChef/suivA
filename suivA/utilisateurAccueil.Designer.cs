@@ -68,6 +68,11 @@ namespace suivA
             this.label2 = new System.Windows.Forms.Label();
             this.affectationPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.medecinBox = new System.Windows.Forms.ComboBox();
+            this.visiteurBox = new System.Windows.Forms.ComboBox();
+            this.medecinSelect = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.validerbutton = new System.Windows.Forms.Button();
             this.navPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.medecinPanel.SuspendLayout();
@@ -516,6 +521,12 @@ namespace suivA
             // 
             // affectationPanel
             // 
+            this.affectationPanel.BackColor = System.Drawing.Color.Transparent;
+            this.affectationPanel.Controls.Add(this.validerbutton);
+            this.affectationPanel.Controls.Add(this.label5);
+            this.affectationPanel.Controls.Add(this.medecinSelect);
+            this.affectationPanel.Controls.Add(this.visiteurBox);
+            this.affectationPanel.Controls.Add(this.medecinBox);
             this.affectationPanel.Controls.Add(this.label4);
             this.affectationPanel.Location = new System.Drawing.Point(0, 56);
             this.affectationPanel.Name = "affectationPanel";
@@ -536,6 +547,64 @@ namespace suivA
             this.label4.TabIndex = 1;
             this.label4.Text = "Affectations";
             // 
+            // medecinBox
+            // 
+            this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinBox.FormattingEnabled = true;
+            this.medecinBox.Location = new System.Drawing.Point(70, 192);
+            this.medecinBox.Name = "medecinBox";
+            this.medecinBox.Size = new System.Drawing.Size(354, 41);
+            this.medecinBox.TabIndex = 62;
+            // 
+            // visiteurBox
+            // 
+            this.visiteurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.visiteurBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visiteurBox.FormattingEnabled = true;
+            this.visiteurBox.Location = new System.Drawing.Point(637, 192);
+            this.visiteurBox.Name = "visiteurBox";
+            this.visiteurBox.Size = new System.Drawing.Size(354, 41);
+            this.visiteurBox.TabIndex = 63;
+            // 
+            // medecinSelect
+            // 
+            this.medecinSelect.AutoSize = true;
+            this.medecinSelect.BackColor = System.Drawing.Color.Transparent;
+            this.medecinSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinSelect.Location = new System.Drawing.Point(91, 108);
+            this.medecinSelect.Name = "medecinSelect";
+            this.medecinSelect.Size = new System.Drawing.Size(109, 33);
+            this.medecinSelect.TabIndex = 64;
+            this.medecinSelect.Text = "Médecin";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(656, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 33);
+            this.label5.TabIndex = 65;
+            this.label5.Text = "Visiteur";
+            // 
+            // validerbutton
+            // 
+            this.validerbutton.BackColor = System.Drawing.Color.White;
+            this.validerbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.validerbutton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.validerbutton.FlatAppearance.BorderSize = 10;
+            this.validerbutton.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.validerbutton.ForeColor = System.Drawing.Color.Black;
+            this.validerbutton.Location = new System.Drawing.Point(461, 444);
+            this.validerbutton.Name = "validerbutton";
+            this.validerbutton.Size = new System.Drawing.Size(128, 46);
+            this.validerbutton.TabIndex = 67;
+            this.validerbutton.Text = "Valider";
+            this.validerbutton.UseVisualStyleBackColor = false;
+            this.validerbutton.Click += new System.EventHandler(this.validerbutton_Click);
+            // 
             // utilisateurAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -543,9 +612,9 @@ namespace suivA
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.navPanel);
+            this.Controls.Add(this.affectationPanel);
             this.Controls.Add(this.panelCabinet);
             this.Controls.Add(this.medecinPanel);
-            this.Controls.Add(this.affectationPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
@@ -893,5 +962,10 @@ namespace suivA
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label cabinetLatitudeTitleLabel;
         private System.Windows.Forms.Label cabinetLongitudeTitleLabel;
+        private System.Windows.Forms.ComboBox visiteurBox;
+        private System.Windows.Forms.ComboBox medecinBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label medecinSelect;
+        private System.Windows.Forms.Button validerbutton;
     }
 }
