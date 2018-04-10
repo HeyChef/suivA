@@ -7,6 +7,7 @@ namespace suivA
     {
         public Visiteur visiteurData { get; set; }
 
+        // Constructeur d'ajout de visite
         public AddVisite(Visiteur visiteur)
         {
             InitializeComponent();
@@ -15,6 +16,7 @@ namespace suivA
             visiteurData = visiteur;
         }
 
+        // Ajout de visite détaillé dans la BDD
         private void validerbutton_Click(object sender, EventArgs e)
         {
             bool isValid = true;

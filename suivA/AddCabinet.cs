@@ -18,6 +18,7 @@ namespace suivA
             InitializeComponent();
         }
 
+        // Fonction qui ajoute un cabinet a la BDD et qui utilise l'API Google Maps
         private void validerbutton_Click(object sender, EventArgs e)
         {
             var geocoder = new Geocoder("AIzaSyDoOuaAcFk-apUd7qNPaVnJcPV7a8iUTn0");

@@ -12,6 +12,8 @@ namespace suivA
 {
     public partial class AddMedecin : Form
     {
+
+        //Constructeur de l'ajout de medecin
         public AddMedecin()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace suivA
             adresseBox.DataSource = dtAdresse;
         }
 
+        //Fonction qui ajoute un medecin a la BDD
         private void validerbutton_Click(object sender, EventArgs e)
         {
             BddRequest addVisite = new BddRequest();

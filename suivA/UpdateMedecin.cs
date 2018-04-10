@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace suivA
 {
+    // Class qui permet la modification des données sur un médecin
     public partial class UpdateMedecin : Form
     {
         private string id { get; set; }
@@ -28,6 +29,7 @@ namespace suivA
             id = medecin["id"].ToString();
         }
 
+        // Fonction qui permet de valider la modification des données medecins.
         private void validerbutton_Click(object sender, EventArgs e)
         {
             BddRequest addVisite = new BddRequest();

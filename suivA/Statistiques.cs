@@ -6,6 +6,7 @@ namespace suivA
 {
     public partial class Statistiques : Form
     {
+        // Constructeur qui initialise la page Statistiques
         public Statistiques()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace suivA
             resultTempsEntretienLabel.Text = statTemps[1];
             resultTpsAttenteLabel.Text = statTemps[0];
         }
-
+        // Permet d'avoir les statistiques du medecin selon la période
         private void paramChangeMedecin(object sender, System.EventArgs e)
         {
             string dp = dPPicker.Value.ToString("yyyy-MM-dd");
@@ -33,7 +34,7 @@ namespace suivA
             statMedecinResultLabel.Text = getStat.GetStatMedecin(medecinBox.SelectedValue.ToString(), dp, fp);
 
         }
-
+        // Permet d'avoir les statistique des visiteurs selon la date
         private void paramChangeVisiteur(object sender, System.EventArgs e)
         {
             string date = dVisiteVis.Value.ToString("yyyy-MM-dd");

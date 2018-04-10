@@ -8,6 +8,8 @@ namespace suivA
     {
         public Visiteur visiteur { get; set; }
         public bool willClosed { get; set; }
+
+        // Constructeur qui initialise la page d'accueil des visiteurs
         public visiteurAccueil(string id)
         {
             InitializeComponent();
@@ -18,6 +20,7 @@ namespace suivA
             getData();
         }
 
+        // Fonction de récupération des data visiteurs
         public void getData()
         {
             BddRequest infovisiteur = new BddRequest();
@@ -25,7 +28,7 @@ namespace suivA
             DataSet data = infovisiteur.SelectVisite(visiteur.id);
             setVisiteForm(data);
         }
-
+        // Fonction qui génère le tableau des data visiteurs
         private void setVisiteForm(DataSet data)
         {
             int y = 0;
@@ -52,6 +55,7 @@ namespace suivA
             }
         }
 
+        // Fonction qui vérifie la fermeture de l'application
         private void visiteurAccueil_FormClosing(object sender, FormClosingEventArgs e)
         {
             if(willClosed == true)
@@ -61,6 +65,7 @@ namespace suivA
             
         }
 
+        // Fonction qui ouvre la fenetre d'ajout de visite
         private void addVisite_Click(object sender, EventArgs e)
         {
             FormCollection fc = Application.OpenForms;
@@ -80,6 +85,7 @@ namespace suivA
             }
         }
 
+        // Fonction qui ouvre la fenetre de consultation de statistique
         private void getStat_Click(object sender, EventArgs e)
         {
             FormCollection fc = Application.OpenForms;
@@ -99,6 +105,7 @@ namespace suivA
             }
         }
 
+        // Fonction qui ouvre la fenetre de modification de visite
         private void updateVisite(object sender, EventArgs e, DataRow visite)
         {
             FormCollection fc = Application.OpenForms;
@@ -114,6 +121,7 @@ namespace suivA
             upt.Show();
         }
 
+        // Fonction qui ouvre le MessageBox de suppression de visite
         private void deleteVisite(object sender, EventArgs e,DataRow visite)
         {
             DialogResult result = MessageBox.Show("Voulez-vous vraiment supprimer cette visite ?", "Supprimer la visite", MessageBoxButtons.YesNo);

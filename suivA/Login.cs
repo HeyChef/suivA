@@ -16,7 +16,7 @@ namespace suivA
         {
             InitializeComponent();
         }
-
+        // Fonction qui compare la saisie lors du login/mdp a ceux de la BDD
         private void validerbutton_Click(object sender, EventArgs e)
         {
             BddRequest loginRequest = new BddRequest();
@@ -45,6 +45,7 @@ namespace suivA
             }
         }
 
+        // Fonction qui permet d'appuyer sur entrée au lieu du bouton validé
         private void passwordbox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Return)

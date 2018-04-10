@@ -14,6 +14,7 @@ namespace suivA
     {
         private string id { get; set; }
         private string id_utilisateur { get; set; }
+        // Constructeur de modification des visite
         public UpdateVisite(DataRow visite,Visiteur visiteurData)
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace suivA
             id_utilisateur = visite["id_utilisateur"].ToString();
         }
 
+        //Fonctions qui valide la modification des visites
         private void validerbutton_Click(object sender, EventArgs e)
         {
             bool isValid = true;

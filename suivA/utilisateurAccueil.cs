@@ -13,6 +13,8 @@ namespace suivA
     public partial class utilisateurAccueil : Form
     {
         public bool willCloseduti { get; set; }
+
+        // Constructeur qui initialise la page Accueil
         public utilisateurAccueil()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace suivA
             willCloseduti = true;
         }
 
+        // Fonction qui affiche les statistiques 
         private void statLabel_Click(object sender, EventArgs e)
         {
             FormCollection fc = Application.OpenForms;
@@ -38,21 +41,21 @@ namespace suivA
                 StatistiquesWindow.Show();
             }
         }
-
+        // Fonction qui qui affiche le panel selon le bouton cliqué
         private void medecinLabel_Click(object sender, EventArgs e)
         {
             medecinPanel.Visible = true;
             panelCabinet.Visible = false;
             affectationPanel.Visible = false;
         }
-
+        // Fonction qui qui affiche le panel selon le bouton cliqué
         private void cabinetLabel_Click(object sender, EventArgs e)
         {
             medecinPanel.Visible = false;
             panelCabinet.Visible = true;
             affectationPanel.Visible = false;
         }
-
+        // Fonction qui qui affiche le panel selon le bouton cliqué
         private void affectationLabel_Click(object sender, EventArgs e)
         {
             medecinPanel.Visible = false;
@@ -60,6 +63,7 @@ namespace suivA
             affectationPanel.Visible = true;
         }
 
+        // Fonction qui récupère les data de tout les médecins et qui les affiche
         public void getData()
         {
             BddRequest getData = new BddRequest();
@@ -68,6 +72,7 @@ namespace suivA
             setMedecinForm(data);
         }
 
+        // Fonction qui génère le tableau des médecins
         private void setMedecinForm(DataSet data)
         {
             int y = 0;
@@ -83,6 +88,7 @@ namespace suivA
             }
         }
 
+        // Fonction qui affiche la fenetre de modification de médecin 
         private void updateMedecin(object sender, EventArgs e, DataRow medecin)
         {
             FormCollection fc = Application.OpenForms;
@@ -98,6 +104,7 @@ namespace suivA
             upt.Show();
         }
 
+        // Fonction qui ouvre la fenetre pour ajouter un médecin
         private void addMedecin_Click(object sender, EventArgs e)
         {
             FormCollection fc = Application.OpenForms;
@@ -116,7 +123,7 @@ namespace suivA
                 addMedecinWindow.Show();
             }
         }
-
+        // Fonction qui verfie la fermerture de l'application
         private void utilisateurAccueil_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (willCloseduti == true)
