@@ -31,7 +31,7 @@ namespace suivA
             string lon = locations.First().LatLng.Longitude.ToString();
             string adresse = locations.First().LocationName.ToString().Split(',').First();
             BddRequest updateCabinet = new BddRequest();
-            string request = "UPDATE cabinet set adresse= \"" + adresse + "\",code_postal= '" + cabinetCPBox.Text + "',ville=" + cabinetVillebox.Text + "',longitude=\""+lon+"\",latitude=\""+lat+"\" where id = " + id;
+            string request = "UPDATE cabinet set adresse= \"" + adresse + "\",code_postal= '" + cabinetCPBox.Text + "',ville=\"" + cabinetVillebox.Text + "\",longitude=\""+lon+"\",latitude=\""+lat+"\" where id = " + id;
             updateCabinet.DataRequest(request);
             MessageBox.Show("Vos informations ont été enregistrées avec succès");
             utilisateurAccueil accueil = Application.OpenForms["utilisateurAccueil"] as utilisateurAccueil;
