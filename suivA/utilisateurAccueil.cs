@@ -166,8 +166,17 @@ namespace suivA
             //upt.Show();
         }
 
+        // Fonction qui verfie la fermerture de l'application
+        private void utilisateurAccueil_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (willCloseduti == true)
+            {
+                Application.Exit();
+            }
+        }
+
         // Fonction qui ouvre la fenetre pour ajouter un cabinet
-        private void addCabinet_Click_1(object sender, EventArgs e)
+        private void addCabinet_Click(object sender, EventArgs e)
         {
             FormCollection fc = Application.OpenForms;
             bool isValid = true;
@@ -181,20 +190,9 @@ namespace suivA
             }
             if (isValid == true)
             {
-                MessageBox.Show("PENIS");
                 AddCabinet addCabinetWindow = new AddCabinet();
                 addCabinetWindow.Show();
-                
-            }
-        }
 
-
-        // Fonction qui verfie la fermerture de l'application
-        private void utilisateurAccueil_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (willCloseduti == true)
-            {
-                Application.Exit();
             }
         }
     }

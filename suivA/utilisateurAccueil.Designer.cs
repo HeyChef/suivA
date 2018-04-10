@@ -357,6 +357,7 @@ namespace suivA
             this.addCabinet.TabIndex = 9;
             this.addCabinet.Text = "Ajouter Cabinet";
             this.addCabinet.UseVisualStyleBackColor = false;
+            this.addCabinet.Click += new System.EventHandler(this.addCabinet_Click);
             // 
             // cabinetTitlePanel
             // 
