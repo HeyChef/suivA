@@ -19,6 +19,7 @@ namespace suivA
         {
             InitializeComponent();
             getData();
+            getDataCabinet();
             willCloseduti = true;
         }
 
@@ -123,6 +124,71 @@ namespace suivA
                 addMedecinWindow.Show();
             }
         }
+
+        // Fonction qui récupère les data de tout les cabinets et qui les affiche
+        public void getDataCabinet()
+        {
+            BddRequest getData = new BddRequest();
+
+            DataSet data = getData.SelectCabinet();
+            setCabinetForm(data);
+        }
+
+        // Fonction qui génère le tableau des cabinets
+        private void setCabinetForm(DataSet data)
+        {
+            int y = 0;
+            int i = 0;
+            foreach (DataTable table in data.Tables)
+            {
+                foreach (DataRow cabinet in table.Rows)
+                {
+                    formCabinet(i, y, cabinet);
+                    i++;
+                    y += 55;
+                }
+            }
+        }
+
+        // Fonction qui affiche la fenetre de modification de cabinet
+        private void updateCabinet(object sender, EventArgs e, DataRow cabinet)
+        {
+            FormCollection fc = Application.OpenForms;
+            foreach (Form form in fc)
+            {
+                if (form.Text == "UpdateCabinet")
+                {
+                    form.Close();
+                    break;
+                }
+            }
+            //UpdateCabinet upt = new UpdateCabinet(cabinet);
+            //upt.Show();
+        }
+
+        // Fonction qui ouvre la fenetre pour ajouter un cabinet
+        private void addCabinet_Click_1(object sender, EventArgs e)
+        {
+            FormCollection fc = Application.OpenForms;
+            bool isValid = true;
+            foreach (Form form in fc)
+            {
+                if (form.Text == "AddCabinet")
+                {
+                    isValid = false;
+                    form.Focus();
+                }
+            }
+            if (isValid == true)
+            {
+                MessageBox.Show("PENIS");
+                AddCabinet addCabinetWindow = new AddCabinet();
+                addCabinetWindow.Show();
+                
+            }
+        }
+
+
         // Fonction qui verfie la fermerture de l'application
         private void utilisateurAccueil_FormClosing(object sender, FormClosingEventArgs e)
         {

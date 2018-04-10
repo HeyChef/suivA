@@ -171,6 +171,20 @@ namespace suivA
             return result;
         }
 
+        // Fonction qui affiche tout les cabinets
+        public DataSet SelectCabinet()
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Select * from cabinet order by id";
+            MySqlDataAdapter data = new MySqlDataAdapter();
+            data.SelectCommand = cmd;
+            DataSet result = new DataSet();
+            data.Fill(result);
+            this.connection.Close();
+            return result;
+        }
+
         // Fonctions qui permet de supprimer les visite
         public void deleteVisite(string id)
         {
