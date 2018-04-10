@@ -45,7 +45,7 @@ namespace suivA
         {
             this.connection.Open();
             MySqlCommand cmd = this.connection.CreateCommand();
-            cmd.CommandText = "select u.nom,u.prenom,u.id,u.id_medecin,u.id_role,m.nom,m.prenom from utilisateur u inner join medecin m on m.id=u.id_medecin where u.id=@id";
+            cmd.CommandText = "select u.nom,u.prenom,u.id,u.id_medecin,u.id_role from utilisateur u inner join medecin m on m.id=u.id_medecin where u.id=@id";
             cmd.Parameters.AddWithValue("@id", id);
             Visiteur visiteur = new Visiteur();
             MySqlDataReader reader = cmd.ExecuteReader();
@@ -144,6 +144,19 @@ namespace suivA
             MySqlCommand cmd = this.connection.CreateCommand();
             cmd.CommandText = "Select id_utilisateur,rendez_vous,heure_arrivee,heure_depart,heure_debut_entretien,v.id,adresse,nom,date_format(date_visite,\"%d/%m/%Y\") as date_visite from visite v inner join medecin m on m.id=v.id_medecin inner join cabinet c on c.id=m.id_cabinet where id_utilisateur=@id_utilisateur";
             cmd.Parameters.AddWithValue("@id_utilisateur", id_utilisateur);
+            MySqlDataAdapter data = new MySqlDataAdapter();
+            data.SelectCommand = cmd;
+            DataSet result = new DataSet();
+            data.Fill(result);
+            this.connection.Close();
+            return result;
+        }
+
+        public DataSet SelectMedecin()
+        {
+            this.connection.Open();
+            MySqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = "Select m.id,nom,prenom,adresse from medecin m inner join cabinet c on c.id=m.id_cabinet order by nom";
             MySqlDataAdapter data = new MySqlDataAdapter();
             data.SelectCommand = cmd;
             DataSet result = new DataSet();
