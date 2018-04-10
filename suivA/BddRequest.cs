@@ -23,7 +23,7 @@ namespace suivA
             string connectionString = "SERVER=127.0.0.1; DATABASE=suivia; UID=root; PASSWORD=";
             this.connection = new MySqlConnection(connectionString);
         }
-
+        // Fonction qui récupère l'ID grace au Login/MDP 
         public string loginRequest(string identifiant, string mdp)
         {
             this.connection.Open();
@@ -40,7 +40,7 @@ namespace suivA
                 return "invalid";
             }
         }
-
+        // Fonction qui renvoi les détails sur un visiteur (Nom medecin / Cabinet etc ... ) 
         public Visiteur getVisiteur(string id)
         {
             this.connection.Open();
@@ -70,7 +70,7 @@ namespace suivA
             this.connection.Close();
             return visiteur;
         }
-
+        // Fonction pour envoyer un Insert/Delete/update, pas de retour , donc pas de test
         public void DataRequest(string request)
         {
             this.connection.Open();
@@ -80,6 +80,7 @@ namespace suivA
             this.connection.Close();
         }
 
+        // Fonction qui permet de faire des SELECT et remplir les combo box 
         public DataTable FillComboBox(string request)
         {
             this.connection.Open();
@@ -91,6 +92,7 @@ namespace suivA
             return dt;
         }
 
+        // Fonction qui renvoi les statistique des medecins
         public string GetStatMedecin(string id_medecin, string date_d, string date_f)
         {
             this.connection.Open();
@@ -104,6 +106,8 @@ namespace suivA
             return result;
         }
 
+
+        // Fonction qui renvoie les statistiques du visiteur
         public string[] GetStatVisiteur(string id_utilisateur, string date)
         {
             this.connection.Open();
@@ -122,6 +126,7 @@ namespace suivA
             return result;
         }
 
+        //Fonction qui renvoie les statistique de Temps moyen par consultation et par temps d'attente
         public string[] GetStatTempsMoy()
         {
             this.connection.Open();
@@ -137,7 +142,7 @@ namespace suivA
             this.connection.Close();
             return result;
         }
-
+        // Fonction qui selectionne toutes les visite saisi par 1 utilisateur
         public DataSet SelectVisite(string id_utilisateur)
         {
             this.connection.Open();
@@ -152,6 +157,7 @@ namespace suivA
             return result;
         }
 
+        // Fonction qui affiche tout les medecins
         public DataSet SelectMedecin()
         {
             this.connection.Open();
@@ -165,6 +171,7 @@ namespace suivA
             return result;
         }
 
+        // Fonctions qui permet de supprimer les visite
         public void deleteVisite(string id)
         {
             this.connection.Open();
