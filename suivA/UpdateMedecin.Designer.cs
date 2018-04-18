@@ -44,6 +44,7 @@
             this.medecinSelect.AutoSize = true;
             this.medecinSelect.BackColor = System.Drawing.Color.Transparent;
             this.medecinSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinSelect.ForeColor = System.Drawing.Color.White;
             this.medecinSelect.Location = new System.Drawing.Point(131, 361);
             this.medecinSelect.Name = "medecinSelect";
             this.medecinSelect.Size = new System.Drawing.Size(111, 33);
@@ -83,6 +84,7 @@
             this.prenomLabel.AutoSize = true;
             this.prenomLabel.BackColor = System.Drawing.Color.Transparent;
             this.prenomLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenomLabel.ForeColor = System.Drawing.Color.White;
             this.prenomLabel.Location = new System.Drawing.Point(131, 264);
             this.prenomLabel.Name = "prenomLabel";
             this.prenomLabel.Size = new System.Drawing.Size(114, 33);
@@ -94,6 +96,7 @@
             this.nomLabel.AutoSize = true;
             this.nomLabel.BackColor = System.Drawing.Color.Transparent;
             this.nomLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomLabel.ForeColor = System.Drawing.Color.White;
             this.nomLabel.Location = new System.Drawing.Point(131, 167);
             this.nomLabel.Name = "nomLabel";
             this.nomLabel.Size = new System.Drawing.Size(81, 33);
@@ -130,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.prenomBox);
             this.Controls.Add(this.nomBox);

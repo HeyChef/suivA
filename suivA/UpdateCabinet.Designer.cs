@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCabinet));
             this.cabinetAdresseBox = new System.Windows.Forms.TextBox();
             this.cabinetCPBox = new System.Windows.Forms.TextBox();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -88,6 +87,7 @@
             this.prenomLabel.AutoSize = true;
             this.prenomLabel.BackColor = System.Drawing.Color.Transparent;
             this.prenomLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenomLabel.ForeColor = System.Drawing.Color.White;
             this.prenomLabel.Location = new System.Drawing.Point(184, 209);
             this.prenomLabel.Name = "prenomLabel";
             this.prenomLabel.Size = new System.Drawing.Size(115, 33);
@@ -99,6 +99,7 @@
             this.nomLabel.AutoSize = true;
             this.nomLabel.BackColor = System.Drawing.Color.Transparent;
             this.nomLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomLabel.ForeColor = System.Drawing.Color.White;
             this.nomLabel.Location = new System.Drawing.Point(144, 282);
             this.nomLabel.Name = "nomLabel";
             this.nomLabel.Size = new System.Drawing.Size(155, 33);
@@ -110,6 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(231, 353);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 33);
@@ -128,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.cabinetVillebox);
             this.Controls.Add(this.label1);

@@ -46,13 +46,17 @@ namespace suivA
             this.dVisiteTitleLabel = new System.Windows.Forms.Label();
             this.lineTitleLabel4 = new System.Windows.Forms.Label();
             this.rdvTitleLabel = new System.Windows.Forms.Label();
+            this.loadingPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.loadingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
-            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.navPanel.Controls.Add(this.getStat);
             this.navPanel.Controls.Add(this.pipe);
             this.navPanel.Controls.Add(this.addVisite);
@@ -104,7 +108,7 @@ namespace suivA
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Location = new System.Drawing.Point(60, 263);
             this.panel1.MaximumSize = new System.Drawing.Size(1040, 540);
             this.panel1.Name = "panel1";
@@ -114,7 +118,7 @@ namespace suivA
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.lineTitleLabel3);
             this.panel2.Controls.Add(this.nomMedecinTitleLabel);
             this.panel2.Controls.Add(this.hDebutTitleLabel);
@@ -243,15 +247,37 @@ namespace suivA
             this.rdvTitleLabel.Text = "Sur Rendez-Vous ?";
             this.rdvTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // loadingPanel
+            // 
+            this.loadingPanel.BackColor = System.Drawing.Color.Transparent;
+            this.loadingPanel.Controls.Add(this.pictureBox1);
+            this.loadingPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.loadingPanel.Location = new System.Drawing.Point(0, 45);
+            this.loadingPanel.Name = "loadingPanel";
+            this.loadingPanel.Size = new System.Drawing.Size(1184, 816);
+            this.loadingPanel.TabIndex = 4;
+            this.loadingPanel.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(500, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 69);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // visiteurAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.navPanel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.loadingPanel);
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Red;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -265,6 +291,8 @@ namespace suivA
             this.navPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.loadingPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,5 +502,7 @@ namespace suivA
         private System.Windows.Forms.Label lineTitleLabel4;
         private System.Windows.Forms.Label rdvLabel;
         private System.Windows.Forms.Label lineLabel4;
+        private System.Windows.Forms.Panel loadingPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

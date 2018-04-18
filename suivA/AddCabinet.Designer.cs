@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCabinet));
             this.titleLabel = new System.Windows.Forms.Label();
             this.adresseLabel = new System.Windows.Forms.Label();
             this.adresseBox = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.adresseLabel.AutoSize = true;
             this.adresseLabel.BackColor = System.Drawing.Color.Transparent;
             this.adresseLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adresseLabel.ForeColor = System.Drawing.Color.White;
             this.adresseLabel.Location = new System.Drawing.Point(80, 162);
             this.adresseLabel.Name = "adresseLabel";
             this.adresseLabel.Size = new System.Drawing.Size(102, 33);
@@ -75,6 +75,7 @@
             this.villeLabel.AutoSize = true;
             this.villeLabel.BackColor = System.Drawing.Color.Transparent;
             this.villeLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.villeLabel.ForeColor = System.Drawing.Color.White;
             this.villeLabel.Location = new System.Drawing.Point(80, 276);
             this.villeLabel.Name = "villeLabel";
             this.villeLabel.Size = new System.Drawing.Size(61, 33);
@@ -94,6 +95,7 @@
             this.cPostalLabel.AutoSize = true;
             this.cPostalLabel.BackColor = System.Drawing.Color.Transparent;
             this.cPostalLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cPostalLabel.ForeColor = System.Drawing.Color.White;
             this.cPostalLabel.Location = new System.Drawing.Point(80, 386);
             this.cPostalLabel.Name = "cPostalLabel";
             this.cPostalLabel.Size = new System.Drawing.Size(142, 33);
@@ -129,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.validerbutton);
             this.Controls.Add(this.cPostalBox);

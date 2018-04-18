@@ -67,12 +67,14 @@ namespace suivA
             this.cabinetRowPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.affectationPanel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.medecinBox = new System.Windows.Forms.ComboBox();
-            this.visiteurBox = new System.Windows.Forms.ComboBox();
-            this.medecinSelect = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.validerbutton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.medecinSelect = new System.Windows.Forms.Label();
+            this.visiteurBox = new System.Windows.Forms.ComboBox();
+            this.medecinBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.loadingPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.medecinPanel.SuspendLayout();
@@ -80,11 +82,13 @@ namespace suivA
             this.panelCabinet.SuspendLayout();
             this.cabinetTitlePanel.SuspendLayout();
             this.affectationPanel.SuspendLayout();
+            this.loadingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
-            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.navPanel.Controls.Add(this.panel1);
             this.navPanel.Controls.Add(this.statLabel);
             this.navPanel.Controls.Add(this.pipe3);
@@ -240,7 +244,7 @@ namespace suivA
             // medecinTitlePanel
             // 
             this.medecinTitlePanel.AutoScroll = true;
-            this.medecinTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.medecinTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.medecinTitlePanel.Controls.Add(this.prenomTitleLabel);
             this.medecinTitlePanel.Controls.Add(this.lineTitleLabel1);
             this.medecinTitlePanel.Controls.Add(this.nomTitleLabel);
@@ -318,7 +322,7 @@ namespace suivA
             // medecinRowPanel
             // 
             this.medecinRowPanel.AutoScroll = true;
-            this.medecinRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.medecinRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.medecinRowPanel.Location = new System.Drawing.Point(70, 189);
             this.medecinRowPanel.MaximumSize = new System.Drawing.Size(1040, 550);
             this.medecinRowPanel.Name = "medecinRowPanel";
@@ -367,7 +371,7 @@ namespace suivA
             // cabinetTitlePanel
             // 
             this.cabinetTitlePanel.AutoScroll = true;
-            this.cabinetTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cabinetTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cabinetTitlePanel.Controls.Add(this.cabinetLatitudeTitleLabel);
             this.cabinetTitlePanel.Controls.Add(this.cabinetLongitudeTitleLabel);
             this.cabinetTitlePanel.Controls.Add(this.label12);
@@ -499,7 +503,7 @@ namespace suivA
             // cabinetRowPanel
             // 
             this.cabinetRowPanel.AutoScroll = true;
-            this.cabinetRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cabinetRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cabinetRowPanel.Location = new System.Drawing.Point(72, 189);
             this.cabinetRowPanel.MaximumSize = new System.Drawing.Size(1040, 550);
             this.cabinetRowPanel.Name = "cabinetRowPanel";
@@ -534,61 +538,6 @@ namespace suivA
             this.affectationPanel.TabIndex = 4;
             this.affectationPanel.Visible = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(12, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 33);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Affectations";
-            // 
-            // medecinBox
-            // 
-            this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinBox.FormattingEnabled = true;
-            this.medecinBox.Location = new System.Drawing.Point(70, 192);
-            this.medecinBox.Name = "medecinBox";
-            this.medecinBox.Size = new System.Drawing.Size(354, 41);
-            this.medecinBox.TabIndex = 62;
-            // 
-            // visiteurBox
-            // 
-            this.visiteurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.visiteurBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visiteurBox.FormattingEnabled = true;
-            this.visiteurBox.Location = new System.Drawing.Point(637, 192);
-            this.visiteurBox.Name = "visiteurBox";
-            this.visiteurBox.Size = new System.Drawing.Size(354, 41);
-            this.visiteurBox.TabIndex = 63;
-            // 
-            // medecinSelect
-            // 
-            this.medecinSelect.AutoSize = true;
-            this.medecinSelect.BackColor = System.Drawing.Color.Transparent;
-            this.medecinSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinSelect.Location = new System.Drawing.Point(91, 108);
-            this.medecinSelect.Name = "medecinSelect";
-            this.medecinSelect.Size = new System.Drawing.Size(109, 33);
-            this.medecinSelect.TabIndex = 64;
-            this.medecinSelect.Text = "Médecin";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(656, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 33);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Visiteur";
-            // 
             // validerbutton
             // 
             this.validerbutton.BackColor = System.Drawing.Color.White;
@@ -605,16 +554,95 @@ namespace suivA
             this.validerbutton.UseVisualStyleBackColor = false;
             this.validerbutton.Click += new System.EventHandler(this.validerbutton_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(656, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 33);
+            this.label5.TabIndex = 65;
+            this.label5.Text = "Visiteur";
+            // 
+            // medecinSelect
+            // 
+            this.medecinSelect.AutoSize = true;
+            this.medecinSelect.BackColor = System.Drawing.Color.Transparent;
+            this.medecinSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinSelect.ForeColor = System.Drawing.Color.White;
+            this.medecinSelect.Location = new System.Drawing.Point(91, 108);
+            this.medecinSelect.Name = "medecinSelect";
+            this.medecinSelect.Size = new System.Drawing.Size(109, 33);
+            this.medecinSelect.TabIndex = 64;
+            this.medecinSelect.Text = "Médecin";
+            // 
+            // visiteurBox
+            // 
+            this.visiteurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.visiteurBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visiteurBox.FormattingEnabled = true;
+            this.visiteurBox.Location = new System.Drawing.Point(637, 192);
+            this.visiteurBox.Name = "visiteurBox";
+            this.visiteurBox.Size = new System.Drawing.Size(354, 41);
+            this.visiteurBox.TabIndex = 63;
+            // 
+            // medecinBox
+            // 
+            this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinBox.FormattingEnabled = true;
+            this.medecinBox.Location = new System.Drawing.Point(70, 192);
+            this.medecinBox.Name = "medecinBox";
+            this.medecinBox.Size = new System.Drawing.Size(354, 41);
+            this.medecinBox.TabIndex = 62;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(12, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 33);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Affectations";
+            // 
+            // loadingPanel
+            // 
+            this.loadingPanel.BackColor = System.Drawing.Color.Transparent;
+            this.loadingPanel.Controls.Add(this.pictureBox1);
+            this.loadingPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.loadingPanel.Location = new System.Drawing.Point(0, 45);
+            this.loadingPanel.Name = "loadingPanel";
+            this.loadingPanel.Size = new System.Drawing.Size(1184, 816);
+            this.loadingPanel.TabIndex = 5;
+            this.loadingPanel.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(501, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // utilisateurAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.navPanel);
-            this.Controls.Add(this.affectationPanel);
             this.Controls.Add(this.panelCabinet);
             this.Controls.Add(this.medecinPanel);
+            this.Controls.Add(this.loadingPanel);
+            this.Controls.Add(this.affectationPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
@@ -636,6 +664,9 @@ namespace suivA
             this.cabinetTitlePanel.PerformLayout();
             this.affectationPanel.ResumeLayout(false);
             this.affectationPanel.PerformLayout();
+            this.loadingPanel.ResumeLayout(false);
+            this.loadingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -967,5 +998,7 @@ namespace suivA
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label medecinSelect;
         private System.Windows.Forms.Button validerbutton;
+        private System.Windows.Forms.Panel loadingPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

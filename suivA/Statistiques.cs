@@ -11,14 +11,29 @@ namespace suivA
         {
             InitializeComponent();
             BddRequest requestStat = new BddRequest();
-            DataTable dtMedecin = requestStat.FillComboBox("Select nom, id from medecin order by nom");
+            DataTable dtMedecin = requestStat.FillComboBox("Select nom,prenom, id from medecin order by nom");
+            DataColumn displayMedecin = new DataColumn("display");
+            displayMedecin.DataType = System.Type.GetType("System.String");
+            dtMedecin.Columns.Add(displayMedecin);
+            foreach (DataRow Rows in dtMedecin.Rows)
+            {
+                Rows["display"] = Rows["nom"].ToString() + " " + Rows["prenom"].ToString();
+            }
+
             medecinBox.ValueMember = "id";
-            medecinBox.DisplayMember = "nom";
+            medecinBox.DisplayMember = "display";
             medecinBox.DataSource = dtMedecin;
 
-            DataTable dtVisiteur = requestStat.FillComboBox("Select nom, id from utilisateur where id_role=1 order by nom");
+            DataTable dtVisiteur = requestStat.FillComboBox("Select nom,prenom, id from utilisateur where id_role=1 order by nom");
+            DataColumn displayVisiteur = new DataColumn("display");
+            displayVisiteur.DataType = System.Type.GetType("System.String");
+            dtVisiteur.Columns.Add(displayVisiteur);
+            foreach (DataRow Rows in dtVisiteur.Rows)
+            {
+                Rows["display"] = Rows["nom"].ToString() + " " + Rows["prenom"].ToString();
+            }
             visiteurBox.ValueMember = "id";
-            visiteurBox.DisplayMember = "nom";
+            visiteurBox.DisplayMember = "display";
             visiteurBox.DataSource = dtVisiteur;
 
             string[] statTemps = requestStat.GetStatTempsMoy();

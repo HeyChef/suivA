@@ -187,16 +187,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\editPicture.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\edit %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\deletePicture.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\close-browser %283%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close-browser %284%29.png" />
@@ -221,6 +215,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

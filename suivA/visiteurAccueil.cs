@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace suivA
 {
@@ -13,20 +15,22 @@ namespace suivA
         public visiteurAccueil(string id)
         {
             InitializeComponent();
-
+            loadingPanel.Show();
             willClosed = true;
             BddRequest infovisiteur = new BddRequest();
             visiteur = infovisiteur.getVisiteur(id);
-            getData();
+            loadingData();
         }
 
         // Fonction de récupération des data visiteurs
-        public void getData()
+        private async Task<DataSet> getData()
         {
+            DataSet data = new DataSet();
             BddRequest infovisiteur = new BddRequest();
 
-            DataSet data = infovisiteur.SelectVisite(visiteur.id);
+            await Task.Run(() => { data = infovisiteur.SelectVisite(visiteur.id); Thread.Sleep(2000);  });
             setVisiteForm(data);
+            return data;
         }
         // Fonction qui génère le tableau des data visiteurs
         private void setVisiteForm(DataSet data)
@@ -135,6 +139,19 @@ namespace suivA
                 willClosed = false;
                 newaccueil.Show();
                 upt.Close();
+            }
+        }
+
+        private async void loadingData()
+        {
+            try
+            {
+                var data = await getData();
+                loadingPanel.Hide();
+            }
+            catch
+            {
+
             }
         }
     }

@@ -69,7 +69,8 @@
             this.statMedecinLabel.AutoSize = true;
             this.statMedecinLabel.BackColor = System.Drawing.Color.Transparent;
             this.statMedecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statMedecinLabel.Location = new System.Drawing.Point(13, 101);
+            this.statMedecinLabel.ForeColor = System.Drawing.Color.White;
+            this.statMedecinLabel.Location = new System.Drawing.Point(12, 86);
             this.statMedecinLabel.Name = "statMedecinLabel";
             this.statMedecinLabel.Size = new System.Drawing.Size(496, 33);
             this.statMedecinLabel.TabIndex = 24;
@@ -77,12 +78,13 @@
             // 
             // medecinBox
             // 
+            this.medecinBox.BackColor = System.Drawing.Color.White;
             this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medecinBox.FormattingEnabled = true;
-            this.medecinBox.Location = new System.Drawing.Point(141, 166);
+            this.medecinBox.Location = new System.Drawing.Point(141, 144);
             this.medecinBox.Name = "medecinBox";
-            this.medecinBox.Size = new System.Drawing.Size(210, 41);
+            this.medecinBox.Size = new System.Drawing.Size(406, 41);
             this.medecinBox.TabIndex = 25;
             this.medecinBox.SelectedIndexChanged += new System.EventHandler(this.paramChangeMedecin);
             // 
@@ -92,7 +94,7 @@
             this.fPPicker.CustomFormat = "dd/MM/yyyy";
             this.fPPicker.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fPPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fPPicker.Location = new System.Drawing.Point(666, 167);
+            this.fPPicker.Location = new System.Drawing.Point(321, 211);
             this.fPPicker.Name = "fPPicker";
             this.fPPicker.Size = new System.Drawing.Size(155, 40);
             this.fPPicker.TabIndex = 26;
@@ -105,7 +107,7 @@
             this.dPPicker.CustomFormat = "dd/MM/yyyy";
             this.dPPicker.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dPPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dPPicker.Location = new System.Drawing.Point(445, 167);
+            this.dPPicker.Location = new System.Drawing.Point(100, 211);
             this.dPPicker.Name = "dPPicker";
             this.dPPicker.Size = new System.Drawing.Size(155, 40);
             this.dPPicker.TabIndex = 27;
@@ -117,7 +119,8 @@
             this.medecinLabel.AutoSize = true;
             this.medecinLabel.BackColor = System.Drawing.Color.Transparent;
             this.medecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinLabel.Location = new System.Drawing.Point(13, 166);
+            this.medecinLabel.ForeColor = System.Drawing.Color.White;
+            this.medecinLabel.Location = new System.Drawing.Point(13, 144);
             this.medecinLabel.Name = "medecinLabel";
             this.medecinLabel.Size = new System.Drawing.Size(109, 33);
             this.medecinLabel.TabIndex = 28;
@@ -128,7 +131,8 @@
             this.pDebutLabel.AutoSize = true;
             this.pDebutLabel.BackColor = System.Drawing.Color.Transparent;
             this.pDebutLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pDebutLabel.Location = new System.Drawing.Point(357, 166);
+            this.pDebutLabel.ForeColor = System.Drawing.Color.White;
+            this.pDebutLabel.Location = new System.Drawing.Point(12, 217);
             this.pDebutLabel.Name = "pDebutLabel";
             this.pDebutLabel.Size = new System.Drawing.Size(82, 33);
             this.pDebutLabel.TabIndex = 29;
@@ -139,7 +143,8 @@
             this.pFinLabel.AutoSize = true;
             this.pFinLabel.BackColor = System.Drawing.Color.Transparent;
             this.pFinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pFinLabel.Location = new System.Drawing.Point(613, 169);
+            this.pFinLabel.ForeColor = System.Drawing.Color.White;
+            this.pFinLabel.Location = new System.Drawing.Point(268, 213);
             this.pFinLabel.Name = "pFinLabel";
             this.pFinLabel.Size = new System.Drawing.Size(47, 33);
             this.pFinLabel.TabIndex = 30;
@@ -150,7 +155,7 @@
             this.statMedecinResultLabel.AutoSize = true;
             this.statMedecinResultLabel.BackColor = System.Drawing.Color.Transparent;
             this.statMedecinResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statMedecinResultLabel.Location = new System.Drawing.Point(531, 101);
+            this.statMedecinResultLabel.Location = new System.Drawing.Point(530, 86);
             this.statMedecinResultLabel.Name = "statMedecinResultLabel";
             this.statMedecinResultLabel.Size = new System.Drawing.Size(0, 33);
             this.statMedecinResultLabel.TabIndex = 31;
@@ -160,6 +165,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 33);
@@ -171,6 +177,7 @@
             this.visiteurLabel.AutoSize = true;
             this.visiteurLabel.BackColor = System.Drawing.Color.Transparent;
             this.visiteurLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visiteurLabel.ForeColor = System.Drawing.Color.White;
             this.visiteurLabel.Location = new System.Drawing.Point(13, 426);
             this.visiteurLabel.Name = "visiteurLabel";
             this.visiteurLabel.Size = new System.Drawing.Size(98, 33);
@@ -179,12 +186,13 @@
             // 
             // visiteurBox
             // 
+            this.visiteurBox.BackColor = System.Drawing.Color.White;
             this.visiteurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.visiteurBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visiteurBox.FormattingEnabled = true;
-            this.visiteurBox.Location = new System.Drawing.Point(141, 426);
+            this.visiteurBox.Location = new System.Drawing.Point(141, 423);
             this.visiteurBox.Name = "visiteurBox";
-            this.visiteurBox.Size = new System.Drawing.Size(210, 41);
+            this.visiteurBox.Size = new System.Drawing.Size(406, 41);
             this.visiteurBox.TabIndex = 34;
             this.visiteurBox.SelectedIndexChanged += new System.EventHandler(this.paramChangeVisiteur);
             // 
@@ -193,7 +201,8 @@
             this.labelJour.AutoSize = true;
             this.labelJour.BackColor = System.Drawing.Color.Transparent;
             this.labelJour.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJour.Location = new System.Drawing.Point(357, 426);
+            this.labelJour.ForeColor = System.Drawing.Color.White;
+            this.labelJour.Location = new System.Drawing.Point(565, 423);
             this.labelJour.Name = "labelJour";
             this.labelJour.Size = new System.Drawing.Size(61, 33);
             this.labelJour.TabIndex = 35;
@@ -205,7 +214,7 @@
             this.dVisiteVis.CustomFormat = "dd/MM/yyyy";
             this.dVisiteVis.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dVisiteVis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dVisiteVis.Location = new System.Drawing.Point(445, 426);
+            this.dVisiteVis.Location = new System.Drawing.Point(653, 423);
             this.dVisiteVis.Name = "dVisiteVis";
             this.dVisiteVis.Size = new System.Drawing.Size(155, 40);
             this.dVisiteVis.TabIndex = 36;
@@ -227,6 +236,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 327);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(528, 33);
@@ -258,6 +268,7 @@
             this.tpsAttenteLabel.AutoSize = true;
             this.tpsAttenteLabel.BackColor = System.Drawing.Color.Transparent;
             this.tpsAttenteLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpsAttenteLabel.ForeColor = System.Drawing.Color.White;
             this.tpsAttenteLabel.Location = new System.Drawing.Point(13, 628);
             this.tpsAttenteLabel.Name = "tpsAttenteLabel";
             this.tpsAttenteLabel.Size = new System.Drawing.Size(272, 33);
@@ -279,6 +290,7 @@
             this.tpsEntretienLabel.AutoSize = true;
             this.tpsEntretienLabel.BackColor = System.Drawing.Color.Transparent;
             this.tpsEntretienLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpsEntretienLabel.ForeColor = System.Drawing.Color.White;
             this.tpsEntretienLabel.Location = new System.Drawing.Point(13, 580);
             this.tpsEntretienLabel.Name = "tpsEntretienLabel";
             this.tpsEntretienLabel.Size = new System.Drawing.Size(327, 33);
@@ -289,7 +301,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.resultTempsEntretienLabel);
             this.Controls.Add(this.tpsEntretienLabel);

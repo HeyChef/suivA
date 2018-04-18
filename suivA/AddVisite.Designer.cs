@@ -55,6 +55,7 @@
             this.cabinetLabel.AutoSize = true;
             this.cabinetLabel.BackColor = System.Drawing.Color.Transparent;
             this.cabinetLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cabinetLabel.ForeColor = System.Drawing.Color.White;
             this.cabinetLabel.Location = new System.Drawing.Point(90, 73);
             this.cabinetLabel.Name = "cabinetLabel";
             this.cabinetLabel.Size = new System.Drawing.Size(111, 33);
@@ -66,7 +67,8 @@
             this.medecinLabel.AutoSize = true;
             this.medecinLabel.BackColor = System.Drawing.Color.Transparent;
             this.medecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinLabel.Location = new System.Drawing.Point(527, 73);
+            this.medecinLabel.ForeColor = System.Drawing.Color.White;
+            this.medecinLabel.Location = new System.Drawing.Point(408, 73);
             this.medecinLabel.Name = "medecinLabel";
             this.medecinLabel.Size = new System.Drawing.Size(122, 33);
             this.medecinLabel.TabIndex = 2;
@@ -77,6 +79,7 @@
             this.dvisiteLabel.AutoSize = true;
             this.dvisiteLabel.BackColor = System.Drawing.Color.Transparent;
             this.dvisiteLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dvisiteLabel.ForeColor = System.Drawing.Color.White;
             this.dvisiteLabel.Location = new System.Drawing.Point(90, 270);
             this.dvisiteLabel.Name = "dvisiteLabel";
             this.dvisiteLabel.Size = new System.Drawing.Size(163, 33);
@@ -88,6 +91,7 @@
             this.hArriveeLabel.AutoSize = true;
             this.hArriveeLabel.BackColor = System.Drawing.Color.Transparent;
             this.hArriveeLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hArriveeLabel.ForeColor = System.Drawing.Color.White;
             this.hArriveeLabel.Location = new System.Drawing.Point(488, 252);
             this.hArriveeLabel.Name = "hArriveeLabel";
             this.hArriveeLabel.Size = new System.Drawing.Size(182, 33);
@@ -99,6 +103,7 @@
             this.hDebutLabel.AutoSize = true;
             this.hDebutLabel.BackColor = System.Drawing.Color.Transparent;
             this.hDebutLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hDebutLabel.ForeColor = System.Drawing.Color.White;
             this.hDebutLabel.Location = new System.Drawing.Point(488, 339);
             this.hDebutLabel.Name = "hDebutLabel";
             this.hDebutLabel.Size = new System.Drawing.Size(184, 33);
@@ -110,6 +115,7 @@
             this.hDepart.AutoSize = true;
             this.hDepart.BackColor = System.Drawing.Color.Transparent;
             this.hDepart.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hDepart.ForeColor = System.Drawing.Color.White;
             this.hDepart.Location = new System.Drawing.Point(488, 424);
             this.hDepart.Name = "hDepart";
             this.hDepart.Size = new System.Drawing.Size(192, 33);
@@ -121,6 +127,7 @@
             this.rdvLabel.AutoSize = true;
             this.rdvLabel.BackColor = System.Drawing.Color.Transparent;
             this.rdvLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdvLabel.ForeColor = System.Drawing.Color.White;
             this.rdvLabel.Location = new System.Drawing.Point(90, 417);
             this.rdvLabel.Name = "rdvLabel";
             this.rdvLabel.Size = new System.Drawing.Size(273, 33);
@@ -132,6 +139,7 @@
             this.rdvTrueLabel.AutoSize = true;
             this.rdvTrueLabel.BackColor = System.Drawing.Color.Transparent;
             this.rdvTrueLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdvTrueLabel.ForeColor = System.Drawing.Color.White;
             this.rdvTrueLabel.Location = new System.Drawing.Point(90, 508);
             this.rdvTrueLabel.Name = "rdvTrueLabel";
             this.rdvTrueLabel.Size = new System.Drawing.Size(53, 33);
@@ -143,6 +151,7 @@
             this.rdvFalseLabel.AutoSize = true;
             this.rdvFalseLabel.BackColor = System.Drawing.Color.Transparent;
             this.rdvFalseLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdvFalseLabel.ForeColor = System.Drawing.Color.White;
             this.rdvFalseLabel.Location = new System.Drawing.Point(207, 508);
             this.rdvFalseLabel.Name = "rdvFalseLabel";
             this.rdvFalseLabel.Size = new System.Drawing.Size(60, 33);
@@ -257,6 +266,7 @@
             this.cabinetSelect.AutoSize = true;
             this.cabinetSelect.BackColor = System.Drawing.Color.Transparent;
             this.cabinetSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cabinetSelect.ForeColor = System.Drawing.Color.White;
             this.cabinetSelect.Location = new System.Drawing.Point(207, 73);
             this.cabinetSelect.Name = "cabinetSelect";
             this.cabinetSelect.Size = new System.Drawing.Size(98, 33);
@@ -280,9 +290,9 @@
             this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medecinBox.FormattingEnabled = true;
-            this.medecinBox.Location = new System.Drawing.Point(687, 70);
+            this.medecinBox.Location = new System.Drawing.Point(554, 73);
             this.medecinBox.Name = "medecinBox";
-            this.medecinBox.Size = new System.Drawing.Size(234, 41);
+            this.medecinBox.Size = new System.Drawing.Size(367, 41);
             this.medecinBox.TabIndex = 70;
             this.medecinBox.SelectionChangeCommitted += new System.EventHandler(this.medecinBox_SelectionChangeCommitted);
             // 
@@ -290,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.medecinBox);
             this.Controls.Add(this.visiteDatePicker);

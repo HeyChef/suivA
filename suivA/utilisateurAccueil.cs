@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,8 +19,7 @@ namespace suivA
         public utilisateurAccueil()
         {
             InitializeComponent();
-            getData();
-            getDataCabinet();
+            loadingPanel.Show();
             willCloseduti = true;
             BddRequest request = new BddRequest();
             DataTable dtMedecin = request.FillComboBox("Select nom, id from medecin order by nom");
@@ -31,6 +31,8 @@ namespace suivA
             visiteurBox.ValueMember = "id";
             visiteurBox.DisplayMember = "nom";
             visiteurBox.DataSource = dtVisiteur;
+
+            loadingData();
         }
 
         // Fonction qui affiche les statistiques 
@@ -75,12 +77,13 @@ namespace suivA
         }
 
         // Fonction qui récupère les data de tout les médecins et qui les affiche
-        public void getData()
+        public async Task<DataSet> getData()
         {
+            DataSet data = new DataSet();
             BddRequest getData = new BddRequest();
-
-            DataSet data = getData.SelectMedecin();
+            await Task.Run(() => { data = getData.SelectMedecin(); Thread.Sleep(2000); });
             setMedecinForm(data);
+            return data;
         }
 
         // Fonction qui génère le tableau des médecins
@@ -136,12 +139,13 @@ namespace suivA
         }
 
         // Fonction qui récupère les data de tout les cabinets et qui les affiche
-        public void getDataCabinet()
+        public async Task<DataSet> getDataCabinet()
         {
+            DataSet data = new DataSet();
             BddRequest getData = new BddRequest();
-
-            DataSet data = getData.SelectCabinet();
+            await Task.Run(() => { data = getData.SelectCabinet(); Thread.Sleep(2000); });
             setCabinetForm(data);
+            return data;
         }
 
         // Fonction qui génère le tableau des cabinets
@@ -211,6 +215,21 @@ namespace suivA
             BddRequest updateMedecin = new BddRequest();
             updateMedecin.DataRequest("UPDATE utilisateur set id_medecin=" + medecinBox.SelectedValue.ToString() + " where id="+visiteurBox.SelectedValue.ToString());
             MessageBox.Show("Les informations ont été modifiées");
+        }
+
+        private async void loadingData()
+        {
+            try
+            {
+                var data = await getData();
+                var dataCabinet = await getDataCabinet();
+
+                loadingPanel.Hide();
+            }
+            catch
+            {
+
+            }
         }
     }
 }

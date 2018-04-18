@@ -14,9 +14,16 @@ namespace suivA
         {
             InitializeComponent();
             BddRequest requestCabinet = new BddRequest();
-            data = requestCabinet.FillComboBox("Select nom,m.id,c.id,adresse from medecin m inner join cabinet c on c.id=m.id_cabinet order by nom");
+            data = requestCabinet.FillComboBox("Select m.prenom,nom,m.id,c.id,adresse from medecin m inner join cabinet c on c.id=m.id_cabinet order by nom");
+            DataColumn display = new DataColumn("display");
+            display.DataType = System.Type.GetType("System.String");
+            data.Columns.Add(display);
+            foreach (DataRow Rows in data.Rows)
+            {
+                Rows["display"] = Rows["nom"].ToString() + " " + Rows["prenom"].ToString();
+            }
             medecinBox.ValueMember = "id";
-            medecinBox.DisplayMember = "nom";
+            medecinBox.DisplayMember = "display";
             medecinBox.DataSource = data;
             cabinetSelect.Text = data.Rows[0]["adresse"].ToString();
             visiteurData = visiteur;
