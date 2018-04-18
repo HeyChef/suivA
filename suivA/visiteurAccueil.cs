@@ -15,7 +15,6 @@ namespace suivA
         public visiteurAccueil(string id)
         {
             InitializeComponent();
-            loadingPanel.Show();
             willClosed = true;
             BddRequest infovisiteur = new BddRequest();
             visiteur = infovisiteur.getVisiteur(id);
@@ -28,7 +27,7 @@ namespace suivA
             DataSet data = new DataSet();
             BddRequest infovisiteur = new BddRequest();
 
-            await Task.Run(() => { data = infovisiteur.SelectVisite(visiteur.id); Thread.Sleep(2000);  });
+            await Task.Run(() => { data = infovisiteur.SelectVisite(visiteur.id);  });
             setVisiteForm(data);
             return data;
         }
@@ -147,7 +146,6 @@ namespace suivA
             try
             {
                 var data = await getData();
-                loadingPanel.Hide();
             }
             catch
             {

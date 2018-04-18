@@ -42,16 +42,6 @@ namespace suivA
             this.cabinetLabel = new System.Windows.Forms.Label();
             this.pipe1 = new System.Windows.Forms.Label();
             this.medecinLabel = new System.Windows.Forms.Label();
-            this.medecinPanel = new System.Windows.Forms.Panel();
-            this.addMedecin = new System.Windows.Forms.Button();
-            this.medecinTitlePanel = new System.Windows.Forms.Panel();
-            this.prenomTitleLabel = new System.Windows.Forms.Label();
-            this.lineTitleLabel1 = new System.Windows.Forms.Label();
-            this.nomTitleLabel = new System.Windows.Forms.Label();
-            this.lineTitleLabel2 = new System.Windows.Forms.Label();
-            this.cabinetTitleLabel = new System.Windows.Forms.Label();
-            this.medecinRowPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelCabinet = new System.Windows.Forms.Panel();
             this.addCabinet = new System.Windows.Forms.Button();
             this.cabinetTitlePanel = new System.Windows.Forms.Panel();
@@ -73,17 +63,23 @@ namespace suivA
             this.visiteurBox = new System.Windows.Forms.ComboBox();
             this.medecinBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.loadingPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.medecinRowPanel = new System.Windows.Forms.Panel();
+            this.medecinTitlePanel = new System.Windows.Forms.Panel();
+            this.cabinetTitleLabel = new System.Windows.Forms.Label();
+            this.lineTitleLabel2 = new System.Windows.Forms.Label();
+            this.nomTitleLabel = new System.Windows.Forms.Label();
+            this.lineTitleLabel1 = new System.Windows.Forms.Label();
+            this.prenomTitleLabel = new System.Windows.Forms.Label();
+            this.addMedecin = new System.Windows.Forms.Button();
+            this.medecinPanel = new System.Windows.Forms.Panel();
             this.navPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.medecinPanel.SuspendLayout();
-            this.medecinTitlePanel.SuspendLayout();
             this.panelCabinet.SuspendLayout();
             this.cabinetTitlePanel.SuspendLayout();
             this.affectationPanel.SuspendLayout();
-            this.loadingPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.medecinTitlePanel.SuspendLayout();
+            this.medecinPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // navPanel
@@ -215,132 +211,6 @@ namespace suivA
             this.medecinLabel.TabIndex = 0;
             this.medecinLabel.Text = "Médecins";
             this.medecinLabel.Click += new System.EventHandler(this.medecinLabel_Click);
-            // 
-            // medecinPanel
-            // 
-            this.medecinPanel.BackColor = System.Drawing.Color.Transparent;
-            this.medecinPanel.Controls.Add(this.addMedecin);
-            this.medecinPanel.Controls.Add(this.medecinTitlePanel);
-            this.medecinPanel.Controls.Add(this.medecinRowPanel);
-            this.medecinPanel.Controls.Add(this.label1);
-            this.medecinPanel.Location = new System.Drawing.Point(0, 56);
-            this.medecinPanel.Name = "medecinPanel";
-            this.medecinPanel.Size = new System.Drawing.Size(1185, 803);
-            this.medecinPanel.TabIndex = 2;
-            // 
-            // addMedecin
-            // 
-            this.addMedecin.BackColor = System.Drawing.Color.Transparent;
-            this.addMedecin.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMedecin.ForeColor = System.Drawing.Color.Black;
-            this.addMedecin.Location = new System.Drawing.Point(836, 15);
-            this.addMedecin.Name = "addMedecin";
-            this.addMedecin.Size = new System.Drawing.Size(274, 54);
-            this.addMedecin.TabIndex = 6;
-            this.addMedecin.Text = "Ajouter Médecin";
-            this.addMedecin.UseVisualStyleBackColor = false;
-            this.addMedecin.Click += new System.EventHandler(this.addMedecin_Click);
-            // 
-            // medecinTitlePanel
-            // 
-            this.medecinTitlePanel.AutoScroll = true;
-            this.medecinTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.medecinTitlePanel.Controls.Add(this.prenomTitleLabel);
-            this.medecinTitlePanel.Controls.Add(this.lineTitleLabel1);
-            this.medecinTitlePanel.Controls.Add(this.nomTitleLabel);
-            this.medecinTitlePanel.Controls.Add(this.lineTitleLabel2);
-            this.medecinTitlePanel.Controls.Add(this.cabinetTitleLabel);
-            this.medecinTitlePanel.Location = new System.Drawing.Point(70, 132);
-            this.medecinTitlePanel.MaximumSize = new System.Drawing.Size(1040, 540);
-            this.medecinTitlePanel.Name = "medecinTitlePanel";
-            this.medecinTitlePanel.Size = new System.Drawing.Size(1040, 59);
-            this.medecinTitlePanel.TabIndex = 5;
-            // 
-            // prenomTitleLabel
-            // 
-            this.prenomTitleLabel.AutoSize = true;
-            this.prenomTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.prenomTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomTitleLabel.ForeColor = System.Drawing.Color.White;
-            this.prenomTitleLabel.Location = new System.Drawing.Point(309, 9);
-            this.prenomTitleLabel.Name = "prenomTitleLabel";
-            this.prenomTitleLabel.Size = new System.Drawing.Size(75, 24);
-            this.prenomTitleLabel.TabIndex = 1;
-            this.prenomTitleLabel.Text = "Prénom";
-            this.prenomTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lineTitleLabel1
-            // 
-            this.lineTitleLabel1.AutoSize = true;
-            this.lineTitleLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineTitleLabel1.ForeColor = System.Drawing.Color.White;
-            this.lineTitleLabel1.Location = new System.Drawing.Point(210, 9);
-            this.lineTitleLabel1.Name = "lineTitleLabel1";
-            this.lineTitleLabel1.Size = new System.Drawing.Size(19, 24);
-            this.lineTitleLabel1.TabIndex = 1;
-            this.lineTitleLabel1.Text = "|";
-            // 
-            // nomTitleLabel
-            // 
-            this.nomTitleLabel.AutoSize = true;
-            this.nomTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nomTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomTitleLabel.ForeColor = System.Drawing.Color.White;
-            this.nomTitleLabel.Location = new System.Drawing.Point(80, 9);
-            this.nomTitleLabel.Name = "nomTitleLabel";
-            this.nomTitleLabel.Size = new System.Drawing.Size(50, 24);
-            this.nomTitleLabel.TabIndex = 0;
-            this.nomTitleLabel.Text = "Nom";
-            this.nomTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lineTitleLabel2
-            // 
-            this.lineTitleLabel2.AutoSize = true;
-            this.lineTitleLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.lineTitleLabel2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineTitleLabel2.ForeColor = System.Drawing.Color.White;
-            this.lineTitleLabel2.Location = new System.Drawing.Point(464, 9);
-            this.lineTitleLabel2.Name = "lineTitleLabel2";
-            this.lineTitleLabel2.Size = new System.Drawing.Size(19, 24);
-            this.lineTitleLabel2.TabIndex = 1;
-            this.lineTitleLabel2.Text = "|";
-            // 
-            // cabinetTitleLabel
-            // 
-            this.cabinetTitleLabel.AutoSize = true;
-            this.cabinetTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.cabinetTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cabinetTitleLabel.ForeColor = System.Drawing.Color.White;
-            this.cabinetTitleLabel.Location = new System.Drawing.Point(563, 9);
-            this.cabinetTitleLabel.Name = "cabinetTitleLabel";
-            this.cabinetTitleLabel.Size = new System.Drawing.Size(75, 24);
-            this.cabinetTitleLabel.TabIndex = 0;
-            this.cabinetTitleLabel.Text = "Cabinet";
-            this.cabinetTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // medecinRowPanel
-            // 
-            this.medecinRowPanel.AutoScroll = true;
-            this.medecinRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.medecinRowPanel.Location = new System.Drawing.Point(70, 189);
-            this.medecinRowPanel.MaximumSize = new System.Drawing.Size(1040, 550);
-            this.medecinRowPanel.Name = "medecinRowPanel";
-            this.medecinRowPanel.Size = new System.Drawing.Size(1040, 100);
-            this.medecinRowPanel.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Médecins";
             // 
             // panelCabinet
             // 
@@ -611,26 +481,131 @@ namespace suivA
             this.label4.TabIndex = 1;
             this.label4.Text = "Affectations";
             // 
-            // loadingPanel
+            // label1
             // 
-            this.loadingPanel.BackColor = System.Drawing.Color.Transparent;
-            this.loadingPanel.Controls.Add(this.pictureBox1);
-            this.loadingPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.loadingPanel.Location = new System.Drawing.Point(0, 45);
-            this.loadingPanel.Name = "loadingPanel";
-            this.loadingPanel.Size = new System.Drawing.Size(1184, 816);
-            this.loadingPanel.TabIndex = 5;
-            this.loadingPanel.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Médecins";
             // 
-            // pictureBox1
+            // medecinRowPanel
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(501, 170);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.medecinRowPanel.AutoScroll = true;
+            this.medecinRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.medecinRowPanel.Location = new System.Drawing.Point(70, 189);
+            this.medecinRowPanel.MaximumSize = new System.Drawing.Size(1040, 550);
+            this.medecinRowPanel.Name = "medecinRowPanel";
+            this.medecinRowPanel.Size = new System.Drawing.Size(1040, 100);
+            this.medecinRowPanel.TabIndex = 4;
+            // 
+            // medecinTitlePanel
+            // 
+            this.medecinTitlePanel.AutoScroll = true;
+            this.medecinTitlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.medecinTitlePanel.Controls.Add(this.prenomTitleLabel);
+            this.medecinTitlePanel.Controls.Add(this.lineTitleLabel1);
+            this.medecinTitlePanel.Controls.Add(this.nomTitleLabel);
+            this.medecinTitlePanel.Controls.Add(this.lineTitleLabel2);
+            this.medecinTitlePanel.Controls.Add(this.cabinetTitleLabel);
+            this.medecinTitlePanel.Location = new System.Drawing.Point(70, 132);
+            this.medecinTitlePanel.MaximumSize = new System.Drawing.Size(1040, 540);
+            this.medecinTitlePanel.Name = "medecinTitlePanel";
+            this.medecinTitlePanel.Size = new System.Drawing.Size(1040, 59);
+            this.medecinTitlePanel.TabIndex = 5;
+            // 
+            // cabinetTitleLabel
+            // 
+            this.cabinetTitleLabel.AutoSize = true;
+            this.cabinetTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cabinetTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cabinetTitleLabel.ForeColor = System.Drawing.Color.White;
+            this.cabinetTitleLabel.Location = new System.Drawing.Point(563, 9);
+            this.cabinetTitleLabel.Name = "cabinetTitleLabel";
+            this.cabinetTitleLabel.Size = new System.Drawing.Size(75, 24);
+            this.cabinetTitleLabel.TabIndex = 0;
+            this.cabinetTitleLabel.Text = "Cabinet";
+            this.cabinetTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lineTitleLabel2
+            // 
+            this.lineTitleLabel2.AutoSize = true;
+            this.lineTitleLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.lineTitleLabel2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel2.ForeColor = System.Drawing.Color.White;
+            this.lineTitleLabel2.Location = new System.Drawing.Point(464, 9);
+            this.lineTitleLabel2.Name = "lineTitleLabel2";
+            this.lineTitleLabel2.Size = new System.Drawing.Size(19, 24);
+            this.lineTitleLabel2.TabIndex = 1;
+            this.lineTitleLabel2.Text = "|";
+            // 
+            // nomTitleLabel
+            // 
+            this.nomTitleLabel.AutoSize = true;
+            this.nomTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nomTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomTitleLabel.ForeColor = System.Drawing.Color.White;
+            this.nomTitleLabel.Location = new System.Drawing.Point(80, 9);
+            this.nomTitleLabel.Name = "nomTitleLabel";
+            this.nomTitleLabel.Size = new System.Drawing.Size(50, 24);
+            this.nomTitleLabel.TabIndex = 0;
+            this.nomTitleLabel.Text = "Nom";
+            this.nomTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lineTitleLabel1
+            // 
+            this.lineTitleLabel1.AutoSize = true;
+            this.lineTitleLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.lineTitleLabel1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineTitleLabel1.ForeColor = System.Drawing.Color.White;
+            this.lineTitleLabel1.Location = new System.Drawing.Point(210, 9);
+            this.lineTitleLabel1.Name = "lineTitleLabel1";
+            this.lineTitleLabel1.Size = new System.Drawing.Size(19, 24);
+            this.lineTitleLabel1.TabIndex = 1;
+            this.lineTitleLabel1.Text = "|";
+            // 
+            // prenomTitleLabel
+            // 
+            this.prenomTitleLabel.AutoSize = true;
+            this.prenomTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.prenomTitleLabel.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenomTitleLabel.ForeColor = System.Drawing.Color.White;
+            this.prenomTitleLabel.Location = new System.Drawing.Point(309, 9);
+            this.prenomTitleLabel.Name = "prenomTitleLabel";
+            this.prenomTitleLabel.Size = new System.Drawing.Size(75, 24);
+            this.prenomTitleLabel.TabIndex = 1;
+            this.prenomTitleLabel.Text = "Prénom";
+            this.prenomTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // addMedecin
+            // 
+            this.addMedecin.BackColor = System.Drawing.Color.Transparent;
+            this.addMedecin.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMedecin.ForeColor = System.Drawing.Color.Black;
+            this.addMedecin.Location = new System.Drawing.Point(836, 15);
+            this.addMedecin.Name = "addMedecin";
+            this.addMedecin.Size = new System.Drawing.Size(274, 54);
+            this.addMedecin.TabIndex = 6;
+            this.addMedecin.Text = "Ajouter Médecin";
+            this.addMedecin.UseVisualStyleBackColor = false;
+            this.addMedecin.Click += new System.EventHandler(this.addMedecin_Click);
+            // 
+            // medecinPanel
+            // 
+            this.medecinPanel.BackColor = System.Drawing.Color.Transparent;
+            this.medecinPanel.Controls.Add(this.addMedecin);
+            this.medecinPanel.Controls.Add(this.medecinTitlePanel);
+            this.medecinPanel.Controls.Add(this.medecinRowPanel);
+            this.medecinPanel.Controls.Add(this.label1);
+            this.medecinPanel.Location = new System.Drawing.Point(0, 56);
+            this.medecinPanel.Name = "medecinPanel";
+            this.medecinPanel.Size = new System.Drawing.Size(1185, 803);
+            this.medecinPanel.TabIndex = 2;
             // 
             // utilisateurAccueil
             // 
@@ -639,10 +614,9 @@ namespace suivA
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.navPanel);
+            this.Controls.Add(this.affectationPanel);
             this.Controls.Add(this.panelCabinet);
             this.Controls.Add(this.medecinPanel);
-            this.Controls.Add(this.loadingPanel);
-            this.Controls.Add(this.affectationPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1200, 900);
             this.MinimumSize = new System.Drawing.Size(1200, 900);
@@ -654,19 +628,16 @@ namespace suivA
             this.navPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.medecinPanel.ResumeLayout(false);
-            this.medecinPanel.PerformLayout();
-            this.medecinTitlePanel.ResumeLayout(false);
-            this.medecinTitlePanel.PerformLayout();
             this.panelCabinet.ResumeLayout(false);
             this.panelCabinet.PerformLayout();
             this.cabinetTitlePanel.ResumeLayout(false);
             this.cabinetTitlePanel.PerformLayout();
             this.affectationPanel.ResumeLayout(false);
             this.affectationPanel.PerformLayout();
-            this.loadingPanel.ResumeLayout(false);
-            this.loadingPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.medecinTitlePanel.ResumeLayout(false);
+            this.medecinTitlePanel.PerformLayout();
+            this.medecinPanel.ResumeLayout(false);
+            this.medecinPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -959,28 +930,18 @@ namespace suivA
         private System.Windows.Forms.Label pipe3;
         private System.Windows.Forms.Label affectationLabel;
         private System.Windows.Forms.Label pipe2;
-        private System.Windows.Forms.Panel medecinPanel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelCabinet;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel affectationPanel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel medecinTitlePanel;
-        private System.Windows.Forms.Label prenomTitleLabel;
-        private System.Windows.Forms.Label lineTitleLabel1;
-        private System.Windows.Forms.Label nomTitleLabel;
-        private System.Windows.Forms.Label lineTitleLabel2;
-        private System.Windows.Forms.Label cabinetTitleLabel;
         private System.Windows.Forms.Label prenomLabel;
         private System.Windows.Forms.Label lineLabel1;
         private System.Windows.Forms.Label nomLabel;
         private System.Windows.Forms.Label lineLabel2;
         private System.Windows.Forms.Label cabinetMedecinLabel;
-        private System.Windows.Forms.Panel medecinRowPanel;
         private System.Windows.Forms.PictureBox editPicture;
-        private System.Windows.Forms.Button addMedecin;
         private System.Windows.Forms.Button addCabinet;
         private System.Windows.Forms.Panel cabinetTitlePanel;
         private System.Windows.Forms.Label cabinetCpTitleLabel;
@@ -998,7 +959,15 @@ namespace suivA
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label medecinSelect;
         private System.Windows.Forms.Button validerbutton;
-        private System.Windows.Forms.Panel loadingPanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel medecinRowPanel;
+        private System.Windows.Forms.Panel medecinTitlePanel;
+        private System.Windows.Forms.Label prenomTitleLabel;
+        private System.Windows.Forms.Label lineTitleLabel1;
+        private System.Windows.Forms.Label nomTitleLabel;
+        private System.Windows.Forms.Label lineTitleLabel2;
+        private System.Windows.Forms.Label cabinetTitleLabel;
+        private System.Windows.Forms.Button addMedecin;
+        private System.Windows.Forms.Panel medecinPanel;
     }
 }

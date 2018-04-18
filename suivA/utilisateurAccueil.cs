@@ -19,7 +19,6 @@ namespace suivA
         public utilisateurAccueil()
         {
             InitializeComponent();
-            loadingPanel.Show();
             willCloseduti = true;
             BddRequest request = new BddRequest();
             DataTable dtMedecin = request.FillComboBox("Select nom, id from medecin order by nom");
@@ -77,13 +76,12 @@ namespace suivA
         }
 
         // Fonction qui récupère les data de tout les médecins et qui les affiche
-        public async Task<DataSet> getData()
+        public void getData()
         {
             DataSet data = new DataSet();
             BddRequest getData = new BddRequest();
-            await Task.Run(() => { data = getData.SelectMedecin(); Thread.Sleep(2000); });
+            data = getData.SelectMedecin();
             setMedecinForm(data);
-            return data;
         }
 
         // Fonction qui génère le tableau des médecins
@@ -139,13 +137,12 @@ namespace suivA
         }
 
         // Fonction qui récupère les data de tout les cabinets et qui les affiche
-        public async Task<DataSet> getDataCabinet()
+        public void getDataCabinet()
         {
             DataSet data = new DataSet();
             BddRequest getData = new BddRequest();
-            await Task.Run(() => { data = getData.SelectCabinet(); Thread.Sleep(2000); });
+            data = getData.SelectCabinet();
             setCabinetForm(data);
-            return data;
         }
 
         // Fonction qui génère le tableau des cabinets
@@ -217,14 +214,12 @@ namespace suivA
             MessageBox.Show("Les informations ont été modifiées");
         }
 
-        private async void loadingData()
+        private void loadingData()
         {
             try
             {
-                var data = await getData();
-                var dataCabinet = await getDataCabinet();
-
-                loadingPanel.Hide();
+                getData();
+                getDataCabinet();
             }
             catch
             {
