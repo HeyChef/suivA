@@ -48,6 +48,7 @@ namespace suivA
             this.rdvTitleLabel = new System.Windows.Forms.Label();
             this.loadingPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dc = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.loadingPanel.SuspendLayout();
@@ -57,6 +58,7 @@ namespace suivA
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.navPanel.Controls.Add(this.dc);
             this.navPanel.Controls.Add(this.getStat);
             this.navPanel.Controls.Add(this.pipe);
             this.navPanel.Controls.Add(this.addVisite);
@@ -267,6 +269,20 @@ namespace suivA
             this.pictureBox1.Size = new System.Drawing.Size(76, 69);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // dc
+            // 
+            this.dc.AutoSize = true;
+            this.dc.BackColor = System.Drawing.Color.Transparent;
+            this.dc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dc.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dc.ForeColor = System.Drawing.Color.White;
+            this.dc.Location = new System.Drawing.Point(1015, 9);
+            this.dc.Name = "dc";
+            this.dc.Size = new System.Drawing.Size(157, 33);
+            this.dc.TabIndex = 69;
+            this.dc.Text = "Déconnexion";
+            this.dc.Click += new System.EventHandler(this.dc_Click);
             // 
             // visiteurAccueil
             // 
@@ -504,5 +520,6 @@ namespace suivA
         private System.Windows.Forms.Label lineLabel4;
         private System.Windows.Forms.Panel loadingPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label dc;
     }
 }

@@ -152,5 +152,14 @@ namespace suivA
 
             }
         }
+
+        private void dc_Click(object sender, EventArgs e)
+        {
+            willClosed = false;
+            var Window = this;
+            Login login = new Login();
+            login.Show();
+            Window.Close();
+        }
     }
 }

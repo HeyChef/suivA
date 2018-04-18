@@ -65,7 +65,7 @@ namespace suivA
                     rdv = false;
                 }
                 BddRequest addVisite = new BddRequest();
-                string request = "INSERT INTO visite (rendez_vous, heure_arrivee, heure_debut_entretien, heure_depart, date_visite, id_medecin, id_utilisateur) VALUES ("+ rdv +", '"+ hArriveePicker.Text +"', '"+ hDebutPicker.Text +"', '"+ hDepartPicker.Text +"', '"+ visiteDatePicker.Text +"', "+ medecinBox.SelectedValue.ToString()  +", "+ cabinetSelect.Text +");";
+                string request = "INSERT INTO visite (rendez_vous, heure_arrivee, heure_debut_entretien, heure_depart, date_visite, id_medecin, id_utilisateur) VALUES ("+ rdv +", '"+ hArriveePicker.Text +"', '"+ hDebutPicker.Text +"', '"+ hDepartPicker.Text +"', '"+ visiteDatePicker.Text +"', "+ medecinBox.SelectedValue.ToString()  +", "+ visiteurData.id +");";
                 addVisite.DataRequest(request);
                 MessageBox.Show("Vos informations ont été enregistrées avec succès");
                 visiteurAccueil accueil = Application.OpenForms["visiteurAccueil"] as visiteurAccueil;

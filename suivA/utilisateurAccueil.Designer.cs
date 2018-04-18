@@ -73,6 +73,7 @@ namespace suivA
             this.prenomTitleLabel = new System.Windows.Forms.Label();
             this.addMedecin = new System.Windows.Forms.Button();
             this.medecinPanel = new System.Windows.Forms.Panel();
+            this.dc = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelCabinet.SuspendLayout();
@@ -85,6 +86,7 @@ namespace suivA
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.navPanel.Controls.Add(this.dc);
             this.navPanel.Controls.Add(this.panel1);
             this.navPanel.Controls.Add(this.statLabel);
             this.navPanel.Controls.Add(this.pipe3);
@@ -607,6 +609,20 @@ namespace suivA
             this.medecinPanel.Size = new System.Drawing.Size(1185, 803);
             this.medecinPanel.TabIndex = 2;
             // 
+            // dc
+            // 
+            this.dc.AutoSize = true;
+            this.dc.BackColor = System.Drawing.Color.Transparent;
+            this.dc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dc.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dc.ForeColor = System.Drawing.Color.White;
+            this.dc.Location = new System.Drawing.Point(1015, 9);
+            this.dc.Name = "dc";
+            this.dc.Size = new System.Drawing.Size(157, 33);
+            this.dc.TabIndex = 68;
+            this.dc.Text = "Déconnexion";
+            this.dc.Click += new System.EventHandler(this.dc_Click);
+            // 
             // utilisateurAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -969,5 +985,6 @@ namespace suivA
         private System.Windows.Forms.Label cabinetTitleLabel;
         private System.Windows.Forms.Button addMedecin;
         private System.Windows.Forms.Panel medecinPanel;
+        private System.Windows.Forms.Label dc;
     }
 }
