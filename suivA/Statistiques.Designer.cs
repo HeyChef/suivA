@@ -155,6 +155,7 @@
             this.statMedecinResultLabel.AutoSize = true;
             this.statMedecinResultLabel.BackColor = System.Drawing.Color.Transparent;
             this.statMedecinResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statMedecinResultLabel.ForeColor = System.Drawing.Color.White;
             this.statMedecinResultLabel.Location = new System.Drawing.Point(530, 86);
             this.statMedecinResultLabel.Name = "statMedecinResultLabel";
             this.statMedecinResultLabel.Size = new System.Drawing.Size(0, 33);
@@ -226,6 +227,7 @@
             this.statVisiteurJourResultLabel.AutoSize = true;
             this.statVisiteurJourResultLabel.BackColor = System.Drawing.Color.Transparent;
             this.statVisiteurJourResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statVisiteurJourResultLabel.ForeColor = System.Drawing.Color.White;
             this.statVisiteurJourResultLabel.Location = new System.Drawing.Point(471, 268);
             this.statVisiteurJourResultLabel.Name = "statVisiteurJourResultLabel";
             this.statVisiteurJourResultLabel.Size = new System.Drawing.Size(0, 33);
@@ -248,6 +250,7 @@
             this.statVisiteurHeurePResultLabel.AutoSize = true;
             this.statVisiteurHeurePResultLabel.BackColor = System.Drawing.Color.Transparent;
             this.statVisiteurHeurePResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statVisiteurHeurePResultLabel.ForeColor = System.Drawing.Color.White;
             this.statVisiteurHeurePResultLabel.Location = new System.Drawing.Point(547, 327);
             this.statVisiteurHeurePResultLabel.Name = "statVisiteurHeurePResultLabel";
             this.statVisiteurHeurePResultLabel.Size = new System.Drawing.Size(0, 33);
@@ -258,6 +261,7 @@
             this.resultTpsAttenteLabel.AutoSize = true;
             this.resultTpsAttenteLabel.BackColor = System.Drawing.Color.Transparent;
             this.resultTpsAttenteLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultTpsAttenteLabel.ForeColor = System.Drawing.Color.White;
             this.resultTpsAttenteLabel.Location = new System.Drawing.Point(291, 628);
             this.resultTpsAttenteLabel.Name = "resultTpsAttenteLabel";
             this.resultTpsAttenteLabel.Size = new System.Drawing.Size(0, 33);
@@ -280,6 +284,7 @@
             this.resultTempsEntretienLabel.AutoSize = true;
             this.resultTempsEntretienLabel.BackColor = System.Drawing.Color.Transparent;
             this.resultTempsEntretienLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultTempsEntretienLabel.ForeColor = System.Drawing.Color.White;
             this.resultTempsEntretienLabel.Location = new System.Drawing.Point(346, 580);
             this.resultTempsEntretienLabel.Name = "resultTempsEntretienLabel";
             this.resultTempsEntretienLabel.Size = new System.Drawing.Size(0, 33);

@@ -18,18 +18,17 @@ namespace suivA
             willClosed = true;
             BddRequest infovisiteur = new BddRequest();
             visiteur = infovisiteur.getVisiteur(id);
-            loadingData();
+            getData();
         }
 
         // Fonction de récupération des data visiteurs
-        private async Task<DataSet> getData()
+        private void getData()
         {
             DataSet data = new DataSet();
             BddRequest infovisiteur = new BddRequest();
 
-            await Task.Run(() => { data = infovisiteur.SelectVisite(visiteur.id);  });
+            data = infovisiteur.SelectVisite(visiteur.id);
             setVisiteForm(data);
-            return data;
         }
         // Fonction qui génère le tableau des data visiteurs
         private void setVisiteForm(DataSet data)
@@ -138,18 +137,6 @@ namespace suivA
                 willClosed = false;
                 newaccueil.Show();
                 upt.Close();
-            }
-        }
-
-        private async void loadingData()
-        {
-            try
-            {
-                var data = await getData();
-            }
-            catch
-            {
-
             }
         }
 
