@@ -45,9 +45,9 @@
             this.hDepartPicker = new System.Windows.Forms.DateTimePicker();
             this.validerbutton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.medecinSelect = new System.Windows.Forms.Label();
             this.cabinetSelect = new System.Windows.Forms.Label();
             this.visiteDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.medecinBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cabinetLabel
@@ -66,7 +66,7 @@
             this.medecinLabel.AutoSize = true;
             this.medecinLabel.BackColor = System.Drawing.Color.Transparent;
             this.medecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinLabel.Location = new System.Drawing.Point(481, 73);
+            this.medecinLabel.Location = new System.Drawing.Point(527, 73);
             this.medecinLabel.Name = "medecinLabel";
             this.medecinLabel.Size = new System.Drawing.Size(122, 33);
             this.medecinLabel.TabIndex = 2;
@@ -252,17 +252,6 @@
             this.titleLabel.TabIndex = 21;
             this.titleLabel.Text = "Ajouter visite";
             // 
-            // medecinSelect
-            // 
-            this.medecinSelect.AutoSize = true;
-            this.medecinSelect.BackColor = System.Drawing.Color.Transparent;
-            this.medecinSelect.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medecinSelect.Location = new System.Drawing.Point(609, 73);
-            this.medecinSelect.Name = "medecinSelect";
-            this.medecinSelect.Size = new System.Drawing.Size(109, 33);
-            this.medecinSelect.TabIndex = 22;
-            this.medecinSelect.Text = "Médecin";
-            // 
             // cabinetSelect
             // 
             this.cabinetSelect.AutoSize = true;
@@ -286,15 +275,26 @@
             this.visiteDatePicker.TabIndex = 24;
             this.visiteDatePicker.Value = new System.DateTime(2018, 4, 8, 0, 0, 0, 0);
             // 
+            // medecinBox
+            // 
+            this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medecinBox.FormattingEnabled = true;
+            this.medecinBox.Location = new System.Drawing.Point(687, 70);
+            this.medecinBox.Name = "medecinBox";
+            this.medecinBox.Size = new System.Drawing.Size(234, 41);
+            this.medecinBox.TabIndex = 70;
+            this.medecinBox.SelectionChangeCommitted += new System.EventHandler(this.medecinBox_SelectionChangeCommitted);
+            // 
             // AddVisite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.medecinBox);
             this.Controls.Add(this.visiteDatePicker);
             this.Controls.Add(this.cabinetSelect);
-            this.Controls.Add(this.medecinSelect);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.validerbutton);
             this.Controls.Add(this.hDepartPicker);
@@ -339,8 +339,8 @@
         private System.Windows.Forms.DateTimePicker hDepartPicker;
         private System.Windows.Forms.Button validerbutton;
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label medecinSelect;
         private System.Windows.Forms.Label cabinetSelect;
         private System.Windows.Forms.DateTimePicker visiteDatePicker;
+        private System.Windows.Forms.ComboBox medecinBox;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace suivA
@@ -6,13 +7,18 @@ namespace suivA
     public partial class AddVisite : Form
     {
         public Visiteur visiteurData { get; set; }
+        private DataTable data { get; set; }
 
         // Constructeur d'ajout de visite
         public AddVisite(Visiteur visiteur)
         {
             InitializeComponent();
-            medecinSelect.Text = visiteur.medecin_name + ", " + visiteur.medecin_surname;
-            cabinetSelect.Text = visiteur.medecin_cabinet;
+            BddRequest requestCabinet = new BddRequest();
+            data = requestCabinet.FillComboBox("Select nom,m.id,c.id,adresse from medecin m inner join cabinet c on c.id=m.id_cabinet order by nom");
+            medecinBox.ValueMember = "id";
+            medecinBox.DisplayMember = "nom";
+            medecinBox.DataSource = data;
+            cabinetSelect.Text = data.Rows[0]["adresse"].ToString();
             visiteurData = visiteur;
         }
 
@@ -52,7 +58,7 @@ namespace suivA
                     rdv = false;
                 }
                 BddRequest addVisite = new BddRequest();
-                string request = "INSERT INTO visite (rendez_vous, heure_arrivee, heure_debut_entretien, heure_depart, date_visite, id_medecin, id_utilisateur) VALUES ("+ rdv +", '"+ hArriveePicker.Text +"', '"+ hDebutPicker.Text +"', '"+ hDepartPicker.Text +"', '"+ visiteDatePicker.Text +"', "+ visiteurData.id_medecin  +", "+ visiteurData.id +");";
+                string request = "INSERT INTO visite (rendez_vous, heure_arrivee, heure_debut_entretien, heure_depart, date_visite, id_medecin, id_utilisateur) VALUES ("+ rdv +", '"+ hArriveePicker.Text +"', '"+ hDebutPicker.Text +"', '"+ hDepartPicker.Text +"', '"+ visiteDatePicker.Text +"', "+ medecinBox.SelectedValue.ToString()  +", "+ cabinetSelect.Text +");";
                 addVisite.DataRequest(request);
                 MessageBox.Show("Vos informations ont été enregistrées avec succès");
                 visiteurAccueil accueil = Application.OpenForms["visiteurAccueil"] as visiteurAccueil;
@@ -63,6 +69,11 @@ namespace suivA
                 newaccueil.Show();
                 upt.Close();
             }
+        }
+
+        private void medecinBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            cabinetSelect.Text = data.Rows[medecinBox.SelectedIndex]["adresse"].ToString();
         }
     }
 }
