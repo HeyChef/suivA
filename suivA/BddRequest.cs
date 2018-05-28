@@ -20,7 +20,7 @@ namespace suivA
         private void InitConnexion()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=172.16.8.22; DATABASE=assistance_situation; UID=K.crinon; PASSWORD=AzertY59000!";
+            string connectionString = "SERVER=172.16.9.22; DATABASE=assistance_situation; UID=K.crinon; PASSWORD=AzertY59000!";
             this.connection = new MySqlConnection(connectionString);
         }
         // Fonction qui récupère l'ID grace au Login/MDP 
