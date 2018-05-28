@@ -11,7 +11,7 @@ namespace suivA.test
         public void TestLogin()
         {
             BddRequest testLogin = new BddRequest();
-            string resultat = testLogin.loginRequest("j","j");
+            string resultat = testLogin.loginRequest("j");
             Assert.AreEqual("103", resultat);
         }
 
@@ -38,15 +38,6 @@ namespace suivA.test
             BddRequest testDuGetMedecin = new BddRequest();
             string resultat = testDuGetMedecin.GetStatMedecin("16", "2018-04-01", "2018-04-30");
             Assert.AreEqual("3", resultat);
-        }
-
-        [TestMethod]
-        // Fonction qui test la BddRequest.GetStatVisiteur
-        public void testStatsVisiteur()
-        {
-            BddRequest testDesStatsVisiteur = new BddRequest();
-            string resultat = testDesStatsVisiteur.GetStatVisiteur("","");
-            Assert.AreEqual("", resultat);
         }
     }
 }
