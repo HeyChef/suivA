@@ -19,7 +19,7 @@ namespace suivA
         // Méthode pour initialiser la connexion
         private void InitConnexion()
         {
-            // Création de la chaîne de connexion
+            // Création de la chaîne de connexion S8
             string connectionString = "SERVER=172.16.8.22; DATABASE=assistance_situation; UID=K.crinon; PASSWORD=AzertY59000!";
             this.connection = new MySqlConnection(connectionString);
         }
