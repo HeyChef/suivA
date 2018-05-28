@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistiques));
             this.titleLabel = new System.Windows.Forms.Label();
-            this.statMedecinLabel = new System.Windows.Forms.Label();
             this.medecinBox = new System.Windows.Forms.ComboBox();
             this.fPPicker = new System.Windows.Forms.DateTimePicker();
             this.dPPicker = new System.Windows.Forms.DateTimePicker();
             this.medecinLabel = new System.Windows.Forms.Label();
             this.pDebutLabel = new System.Windows.Forms.Label();
             this.pFinLabel = new System.Windows.Forms.Label();
-            this.statMedecinResultLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.visiteurLabel = new System.Windows.Forms.Label();
             this.visiteurBox = new System.Windows.Forms.ComboBox();
             this.labelJour = new System.Windows.Forms.Label();
             this.dVisiteVis = new System.Windows.Forms.DateTimePicker();
-            this.statVisiteurJourResultLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.statVisiteurHeurePResultLabel = new System.Windows.Forms.Label();
             this.resultTpsAttenteLabel = new System.Windows.Forms.Label();
             this.tpsAttenteLabel = new System.Windows.Forms.Label();
             this.resultTempsEntretienLabel = new System.Windows.Forms.Label();
             this.tpsEntretienLabel = new System.Windows.Forms.Label();
+            this.statVisiteurHeurePResultLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.statVisiteurJourResultLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.statMedecinResultLabel = new System.Windows.Forms.Label();
+            this.statMedecinLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -64,25 +64,13 @@
             this.titleLabel.TabIndex = 22;
             this.titleLabel.Text = "Statistiques";
             // 
-            // statMedecinLabel
-            // 
-            this.statMedecinLabel.AutoSize = true;
-            this.statMedecinLabel.BackColor = System.Drawing.Color.Transparent;
-            this.statMedecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statMedecinLabel.ForeColor = System.Drawing.Color.White;
-            this.statMedecinLabel.Location = new System.Drawing.Point(12, 86);
-            this.statMedecinLabel.Name = "statMedecinLabel";
-            this.statMedecinLabel.Size = new System.Drawing.Size(496, 33);
-            this.statMedecinLabel.TabIndex = 24;
-            this.statMedecinLabel.Text = "Nombre de visites par médecin par période :";
-            // 
             // medecinBox
             // 
             this.medecinBox.BackColor = System.Drawing.Color.White;
             this.medecinBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.medecinBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medecinBox.FormattingEnabled = true;
-            this.medecinBox.Location = new System.Drawing.Point(141, 144);
+            this.medecinBox.Location = new System.Drawing.Point(140, 83);
             this.medecinBox.Name = "medecinBox";
             this.medecinBox.Size = new System.Drawing.Size(406, 41);
             this.medecinBox.TabIndex = 25;
@@ -94,7 +82,7 @@
             this.fPPicker.CustomFormat = "dd/MM/yyyy";
             this.fPPicker.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fPPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fPPicker.Location = new System.Drawing.Point(321, 211);
+            this.fPPicker.Location = new System.Drawing.Point(320, 150);
             this.fPPicker.Name = "fPPicker";
             this.fPPicker.Size = new System.Drawing.Size(155, 40);
             this.fPPicker.TabIndex = 26;
@@ -107,7 +95,7 @@
             this.dPPicker.CustomFormat = "dd/MM/yyyy";
             this.dPPicker.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dPPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dPPicker.Location = new System.Drawing.Point(100, 211);
+            this.dPPicker.Location = new System.Drawing.Point(99, 150);
             this.dPPicker.Name = "dPPicker";
             this.dPPicker.Size = new System.Drawing.Size(155, 40);
             this.dPPicker.TabIndex = 27;
@@ -120,7 +108,7 @@
             this.medecinLabel.BackColor = System.Drawing.Color.Transparent;
             this.medecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medecinLabel.ForeColor = System.Drawing.Color.White;
-            this.medecinLabel.Location = new System.Drawing.Point(13, 144);
+            this.medecinLabel.Location = new System.Drawing.Point(12, 83);
             this.medecinLabel.Name = "medecinLabel";
             this.medecinLabel.Size = new System.Drawing.Size(109, 33);
             this.medecinLabel.TabIndex = 28;
@@ -132,7 +120,7 @@
             this.pDebutLabel.BackColor = System.Drawing.Color.Transparent;
             this.pDebutLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pDebutLabel.ForeColor = System.Drawing.Color.White;
-            this.pDebutLabel.Location = new System.Drawing.Point(12, 217);
+            this.pDebutLabel.Location = new System.Drawing.Point(11, 156);
             this.pDebutLabel.Name = "pDebutLabel";
             this.pDebutLabel.Size = new System.Drawing.Size(82, 33);
             this.pDebutLabel.TabIndex = 29;
@@ -144,34 +132,11 @@
             this.pFinLabel.BackColor = System.Drawing.Color.Transparent;
             this.pFinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pFinLabel.ForeColor = System.Drawing.Color.White;
-            this.pFinLabel.Location = new System.Drawing.Point(268, 213);
+            this.pFinLabel.Location = new System.Drawing.Point(267, 152);
             this.pFinLabel.Name = "pFinLabel";
             this.pFinLabel.Size = new System.Drawing.Size(47, 33);
             this.pFinLabel.TabIndex = 30;
             this.pFinLabel.Text = "Fin";
-            // 
-            // statMedecinResultLabel
-            // 
-            this.statMedecinResultLabel.AutoSize = true;
-            this.statMedecinResultLabel.BackColor = System.Drawing.Color.Transparent;
-            this.statMedecinResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statMedecinResultLabel.ForeColor = System.Drawing.Color.White;
-            this.statMedecinResultLabel.Location = new System.Drawing.Point(530, 86);
-            this.statMedecinResultLabel.Name = "statMedecinResultLabel";
-            this.statMedecinResultLabel.Size = new System.Drawing.Size(0, 33);
-            this.statMedecinResultLabel.TabIndex = 31;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 268);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 33);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Nombre de visites par visiteur par jour :";
             // 
             // visiteurLabel
             // 
@@ -179,7 +144,7 @@
             this.visiteurLabel.BackColor = System.Drawing.Color.Transparent;
             this.visiteurLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visiteurLabel.ForeColor = System.Drawing.Color.White;
-            this.visiteurLabel.Location = new System.Drawing.Point(13, 426);
+            this.visiteurLabel.Location = new System.Drawing.Point(12, 332);
             this.visiteurLabel.Name = "visiteurLabel";
             this.visiteurLabel.Size = new System.Drawing.Size(98, 33);
             this.visiteurLabel.TabIndex = 33;
@@ -191,7 +156,7 @@
             this.visiteurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.visiteurBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visiteurBox.FormattingEnabled = true;
-            this.visiteurBox.Location = new System.Drawing.Point(141, 423);
+            this.visiteurBox.Location = new System.Drawing.Point(140, 329);
             this.visiteurBox.Name = "visiteurBox";
             this.visiteurBox.Size = new System.Drawing.Size(406, 41);
             this.visiteurBox.TabIndex = 34;
@@ -203,7 +168,7 @@
             this.labelJour.BackColor = System.Drawing.Color.Transparent;
             this.labelJour.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJour.ForeColor = System.Drawing.Color.White;
-            this.labelJour.Location = new System.Drawing.Point(565, 423);
+            this.labelJour.Location = new System.Drawing.Point(564, 329);
             this.labelJour.Name = "labelJour";
             this.labelJour.Size = new System.Drawing.Size(61, 33);
             this.labelJour.TabIndex = 35;
@@ -215,46 +180,12 @@
             this.dVisiteVis.CustomFormat = "dd/MM/yyyy";
             this.dVisiteVis.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dVisiteVis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dVisiteVis.Location = new System.Drawing.Point(653, 423);
+            this.dVisiteVis.Location = new System.Drawing.Point(652, 329);
             this.dVisiteVis.Name = "dVisiteVis";
             this.dVisiteVis.Size = new System.Drawing.Size(155, 40);
             this.dVisiteVis.TabIndex = 36;
             this.dVisiteVis.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
             this.dVisiteVis.ValueChanged += new System.EventHandler(this.paramChangeVisiteur);
-            // 
-            // statVisiteurJourResultLabel
-            // 
-            this.statVisiteurJourResultLabel.AutoSize = true;
-            this.statVisiteurJourResultLabel.BackColor = System.Drawing.Color.Transparent;
-            this.statVisiteurJourResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statVisiteurJourResultLabel.ForeColor = System.Drawing.Color.White;
-            this.statVisiteurJourResultLabel.Location = new System.Drawing.Point(471, 268);
-            this.statVisiteurJourResultLabel.Name = "statVisiteurJourResultLabel";
-            this.statVisiteurJourResultLabel.Size = new System.Drawing.Size(0, 33);
-            this.statVisiteurJourResultLabel.TabIndex = 37;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 327);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(528, 33);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Nombre d\'heures passées par visiteur par jour :";
-            // 
-            // statVisiteurHeurePResultLabel
-            // 
-            this.statVisiteurHeurePResultLabel.AutoSize = true;
-            this.statVisiteurHeurePResultLabel.BackColor = System.Drawing.Color.Transparent;
-            this.statVisiteurHeurePResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statVisiteurHeurePResultLabel.ForeColor = System.Drawing.Color.White;
-            this.statVisiteurHeurePResultLabel.Location = new System.Drawing.Point(547, 327);
-            this.statVisiteurHeurePResultLabel.Name = "statVisiteurHeurePResultLabel";
-            this.statVisiteurHeurePResultLabel.Size = new System.Drawing.Size(0, 33);
-            this.statVisiteurHeurePResultLabel.TabIndex = 40;
             // 
             // resultTpsAttenteLabel
             // 
@@ -302,32 +233,101 @@
             this.tpsEntretienLabel.TabIndex = 43;
             this.tpsEntretienLabel.Text = "Temps moyen d\'un entretien";
             // 
+            // statVisiteurHeurePResultLabel
+            // 
+            this.statVisiteurHeurePResultLabel.AutoSize = true;
+            this.statVisiteurHeurePResultLabel.BackColor = System.Drawing.Color.Transparent;
+            this.statVisiteurHeurePResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statVisiteurHeurePResultLabel.ForeColor = System.Drawing.Color.White;
+            this.statVisiteurHeurePResultLabel.Location = new System.Drawing.Point(547, 464);
+            this.statVisiteurHeurePResultLabel.Name = "statVisiteurHeurePResultLabel";
+            this.statVisiteurHeurePResultLabel.Size = new System.Drawing.Size(0, 33);
+            this.statVisiteurHeurePResultLabel.TabIndex = 48;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(13, 464);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(528, 33);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Nombre d\'heures passées par visiteur par jour :";
+            // 
+            // statVisiteurJourResultLabel
+            // 
+            this.statVisiteurJourResultLabel.AutoSize = true;
+            this.statVisiteurJourResultLabel.BackColor = System.Drawing.Color.Transparent;
+            this.statVisiteurJourResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statVisiteurJourResultLabel.ForeColor = System.Drawing.Color.White;
+            this.statVisiteurJourResultLabel.Location = new System.Drawing.Point(471, 405);
+            this.statVisiteurJourResultLabel.Name = "statVisiteurJourResultLabel";
+            this.statVisiteurJourResultLabel.Size = new System.Drawing.Size(0, 33);
+            this.statVisiteurJourResultLabel.TabIndex = 46;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 405);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(443, 33);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Nombre de visites par visiteur par jour :";
+            // 
+            // statMedecinResultLabel
+            // 
+            this.statMedecinResultLabel.AutoSize = true;
+            this.statMedecinResultLabel.BackColor = System.Drawing.Color.Transparent;
+            this.statMedecinResultLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statMedecinResultLabel.ForeColor = System.Drawing.Color.White;
+            this.statMedecinResultLabel.Location = new System.Drawing.Point(531, 236);
+            this.statMedecinResultLabel.Name = "statMedecinResultLabel";
+            this.statMedecinResultLabel.Size = new System.Drawing.Size(0, 33);
+            this.statMedecinResultLabel.TabIndex = 50;
+            // 
+            // statMedecinLabel
+            // 
+            this.statMedecinLabel.AutoSize = true;
+            this.statMedecinLabel.BackColor = System.Drawing.Color.Transparent;
+            this.statMedecinLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statMedecinLabel.ForeColor = System.Drawing.Color.White;
+            this.statMedecinLabel.Location = new System.Drawing.Point(13, 236);
+            this.statMedecinLabel.Name = "statMedecinLabel";
+            this.statMedecinLabel.Size = new System.Drawing.Size(496, 33);
+            this.statMedecinLabel.TabIndex = 49;
+            this.statMedecinLabel.Text = "Nombre de visites par médecin par période :";
+            // 
             // Statistiques
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.statMedecinResultLabel);
+            this.Controls.Add(this.statMedecinLabel);
+            this.Controls.Add(this.statVisiteurHeurePResultLabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.statVisiteurJourResultLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.resultTempsEntretienLabel);
             this.Controls.Add(this.tpsEntretienLabel);
             this.Controls.Add(this.resultTpsAttenteLabel);
             this.Controls.Add(this.tpsAttenteLabel);
-            this.Controls.Add(this.statVisiteurHeurePResultLabel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.statVisiteurJourResultLabel);
             this.Controls.Add(this.dVisiteVis);
             this.Controls.Add(this.labelJour);
             this.Controls.Add(this.visiteurBox);
             this.Controls.Add(this.visiteurLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.statMedecinResultLabel);
             this.Controls.Add(this.pFinLabel);
             this.Controls.Add(this.pDebutLabel);
             this.Controls.Add(this.medecinLabel);
             this.Controls.Add(this.dPPicker);
             this.Controls.Add(this.fPPicker);
             this.Controls.Add(this.medecinBox);
-            this.Controls.Add(this.statMedecinLabel);
             this.Controls.Add(this.titleLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(960, 720);
@@ -343,25 +343,25 @@
         #endregion
 
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label statMedecinLabel;
         private System.Windows.Forms.ComboBox medecinBox;
         private System.Windows.Forms.DateTimePicker fPPicker;
         private System.Windows.Forms.DateTimePicker dPPicker;
         private System.Windows.Forms.Label medecinLabel;
         private System.Windows.Forms.Label pDebutLabel;
         private System.Windows.Forms.Label pFinLabel;
-        private System.Windows.Forms.Label statMedecinResultLabel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label visiteurLabel;
         private System.Windows.Forms.ComboBox visiteurBox;
         private System.Windows.Forms.Label labelJour;
         private System.Windows.Forms.DateTimePicker dVisiteVis;
-        private System.Windows.Forms.Label statVisiteurJourResultLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label statVisiteurHeurePResultLabel;
         private System.Windows.Forms.Label resultTpsAttenteLabel;
         private System.Windows.Forms.Label tpsAttenteLabel;
         private System.Windows.Forms.Label resultTempsEntretienLabel;
         private System.Windows.Forms.Label tpsEntretienLabel;
+        private System.Windows.Forms.Label statVisiteurHeurePResultLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label statVisiteurJourResultLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label statMedecinResultLabel;
+        private System.Windows.Forms.Label statMedecinLabel;
     }
 }
