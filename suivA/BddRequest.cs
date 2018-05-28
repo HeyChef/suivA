@@ -20,15 +20,15 @@ namespace suivA
         private void InitConnexion()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=mysql-assistance.alwaysdata.net; DATABASE=assistance_suiva; UID=156610_ppe; PASSWORD=azerty";
+            string connectionString = "SERVER=172.16.8.22; DATABASE=assistance_situation; UID=K.crinon; PASSWORD=AzertY!59000";
             this.connection = new MySqlConnection(connectionString);
         }
         // Fonction qui récupère l'ID grace au Login/MDP 
-        public string loginRequest(string identifiant, string mdp)
+        public string loginRequest(string identifiant)
         {
             this.connection.Open();
             MySqlCommand cmd = this.connection.CreateCommand();
-            cmd.CommandText = "Select id from utilisateur where login ='" + identifiant + "' AND password ='" + mdp + "'";
+            cmd.CommandText = "Select id from utilisateur where login ='" + identifiant + "'";
             var resultRequest = cmd.ExecuteScalar();
             this.connection.Close();
             if (resultRequest != null)
